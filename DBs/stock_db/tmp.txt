@@ -1,0 +1,729 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-138646291-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-138646291-1');
+</script>
+
+<title>臺灣證券交易所-基本市況報導網站</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="Stylesheet" type="text/css" href="css/cupertino/jquery-ui-1.8.21.custom.css">
+<link rel="stylesheet" type="text/css" href="css/superfish.css">
+<link rel="stylesheet" type="text/css" href="css/style.css?1567444326869">
+<link rel="stylesheet" type="text/css" href="css/searchbox.css">
+<link rel="stylesheet" type="text/css" href="css/ticker.css">
+
+
+<link rel="stylesheet" type="text/css" href="css/style.table.css?1567444326869">
+<link rel="stylesheet" type="text/css" href="css/pagination.css">
+
+<link rel="stylesheet" type="text/css" href="css/style.group.css?1567444326869">
+
+<script>
+var lang="zh_tw";
+</script>
+<!--<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+
+
+
+<script type="text/javascript" src="js/highstock.js"></script>
+
+
+
+<script type="text/javascript" src="ctrl/ctrl.lang_zh_tw.js?1567444326869"></script>
+<script id="init" type="text/javascript" loadjson="1" src="ctrl/ctrl.init.js?1567444326869"></script>
+
+<script type="text/javascript" src="ctrl/ctrl.group.js?1567444326869"></script>
+
+</head>
+
+
+
+
+<body>
+
+
+<div id="container">
+	<div id="holder" class="clearfix">
+		<!--<div id="logo" >-->
+	<!--
+		<div style="display: inline;">
+			<div id="logo" >
+				<h1>基本市況報導網站</h1><h1>Market Information System</h1>
+
+			</div>
+			<div id="logobutton">
+				<button id="zh_tw" >正體中文</button><button id="en_us">English</button>
+			</div>
+		</div>
+		-->
+		<table id="logo">
+			<tbody>
+			<tr>
+				<td valign="top">
+                                
+					<h1>基本市況報導網站</h1>
+					<h1>Market Information System</h1>
+                                
+				</td>
+				<td align="right" valign="top" width="100%">
+					<button id="zh_tw" disabled="disabled">正體中文</button>
+					<button id="en_us">English</button>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	  <center>
+	  <div style="float:center">
+			<ul class="sf-menu sf-js-enabled sf-shadow">
+				<!---<li><a class="top-a" href="index.jsp"><b>首頁</b></a></li>-->
+				<li><a class="top-a sf-with-ul"><b>大盤資訊</b><span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+				<div class="col2">
+					<ul class="colLeft">
+						<li><a href="group.jsp?type=fixed&amp;ex=tse&amp;ind=TIDX">集中市場</a></li>
+						<li><a href="https://www.taiwanindex.com.tw/index/indexDashboard?type=TIP" target="_blank">臺灣指數公司指數</a></li>
+						<li><a href="group.jsp?type=fixed&amp;ex=otc&amp;ind=OIDX">上櫃市場</a></li>
+						<li><a href="https://mis.tpex.org.tw/" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;興櫃市場</a></li>
+						<li><a href="https://info512.taifex.com.tw/Future/index_home.aspx" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;期貨市場</a></li>
+						<!--<li><a href="marketchart.jsp">大盤走勢</a></li>-->
+						<li><a href="index.jsp" class="sf-with-ul">走勢圖<span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+							<ul class="colSingle" style="display: none; visibility: hidden;">
+									<li><a href="frmsa.jsp?ex=otc&amp;ind=B0">寶島指數</a></li>
+									<li><a href="index.jsp?ex=tse&amp;ind=B0">大盤走勢</a></li>
+									<li><a href="futures.jsp">期貨走勢</a></li>
+								</ul>
+						</li>
+					</ul>
+
+				</div>
+				</li>
+				<li><a class="top-a" href="group.jsp?ex=tse&amp;type=all&amp;ind=01"><b>現貨類股行情</b></a></li>
+
+				<li><a class="top-a sf-with-ul"><b>期貨商品行情</b><span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+				<div class="col2">
+					<ul class="colLeft">
+						<li><a href="https://info512.taifex.com.tw/Future/FusaQuote_Norl.aspx?_Category=1" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;指數類商品報價</a></li>
+						<li><a href="https://info512.taifex.com.tw/Future/FusaQuote_Norl.aspx?_Category=2" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;股票類商品報價</a></li>
+						<li><a href="https://info512.taifex.com.tw/Future/FusaQuote_Norl.aspx?_Category=6" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;ETF類商品報價</a></li>
+						<li><a href="https://info512.taifex.com.tw/Future/FusaQuote_Norl.aspx?_Category=5" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;匯率類商品報價</a></li>
+						<li><a href="https://info512.taifex.com.tw/Future/FusaQuote_Norl.aspx?_Category=3" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;黃金類商品報價</a></li>
+						<li><a href="https://info512.taifex.com.tw/Future/FusaQuote_Norl.aspx?_Category=4" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;利率類商品報價</a></li>
+						<li><a href="https://info512.taifex.com.tw/Future/BlockSingle_Norl.aspx" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;鉅額交易</a></li>
+					</ul>
+				</div>
+
+				</li><li><a class="top-a" href="fibest.jsp"><b>最佳五檔</b></a></li>
+
+				<li><a class="top-a sf-with-ul"><b>各項專區</b><span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+					<div class="col1">
+						<ul class="colSingle">
+							<li>
+							<a class="sf-with-ul">ETF行情<span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+								<ul class="colSingle" style="display: none; visibility: hidden;">
+									<li><a href="group_etf.jsp?ex=tse&amp;ind=B0">集中市場ETF</a></li>
+									<li><a href="group_etf.jsp?ex=otc&amp;ind=B0">上櫃市場ETF</a></li>
+									<li><a href="etf_nav.jsp?ex=tse">集中市場ETF<br>單位變動及<br>淨值揭露</a></li>
+									<li><a href="etf_nav.jsp?ex=otc">櫃買市場ETF<br>單位變動及<br>淨值揭露</a></li>
+								</ul>
+							</li>
+							<li>
+							<a class="sf-with-ul">ETN行情<span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+								<ul class="colSingle" style="display: none; visibility: hidden;">
+									<li><a href="group_etf.jsp?ex=tse&amp;ind=B1">集中市場ETN</a></li>
+									<li><a href="group_etf.jsp?ex=otc&amp;ind=B1">上櫃市場ETN</a></li>
+									<li><a href="etn_nav.jsp?ex=tse">集中市場ETN<br>單位變動及<br>指標價值揭露</a></li>
+									<li><a href="etn_nav.jsp?ex=otc">櫃買市場ETN<br>單位變動及<br>指標價值揭露</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="sf-with-ul">海外企業<span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+								<ul class="colSingle" style="display: none; visibility: hidden;">
+									<li><a href="group.jsp?type=fixed&amp;ex=tse&amp;ind=Q0">海外企業第一<br>上市交易</a></li>
+									<li><a href="group.jsp?type=fixed&amp;ex=otc&amp;ind=Q0">海外企業第一<br>上櫃交易</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="sf-with-ul">存託憑證<span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+								<ul class="colSingle" style="display: none; visibility: hidden;">
+									<li><a href="group.jsp?type=fixed&amp;ex=tse&amp;ind=E0">集中市場存託憑證</a></li>
+									<li><a href="group.jsp?type=fixed&amp;ex=otc&amp;ind=E0">上櫃市場存託憑證</a></li>
+								</ul>
+							</li>
+							<li><a href="group.jsp?type=warrant&amp;ex=tse&amp;ind=D1">權證行情</a></li>
+                            <li><a href="group.jsp?type=postponedOpening">暫緩開盤</a></li>
+                            <li><a href="group.jsp?type=postponed">暫緩收盤</a></li>
+							
+						</ul>
+					</div>
+				</li>
+
+				<li><a class="top-a sf-with-ul"><b>其他交易</b><span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+				<div>
+					<ul>
+        				<li><a class="sf-with-ul">鉅額揭示<span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+        				<div>
+        					<ul>
+        						<li>
+        						<a class="sf-with-ul">集中市場<span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+        							<ul style="display: none; visibility: hidden;">
+        								<li><a href="blockTrade.jsp?act=tseSingleNonPaired">單一證券逐筆交易</a></li>
+        								<li><a href="blockTrade.jsp?act=tseSinglePaired">單一證券配對交易</a></li>
+        								<li><a href="blockTrade.jsp?act=tseBasketNonPaired">股票組合逐筆交易</a></li>
+        								<li><a href="blockTrade.jsp?act=tseBasketPaired">股票組合配對交易</a></li>
+        								<li><a href="blockTrade.jsp?act=tsePrice">鉅額交易<br>漲跌停價格</a></li>
+        							</ul>
+        						</li>
+        						<li>
+        							<a class="sf-with-ul">上櫃市場<span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+        							<ul style="display: none; visibility: hidden;">
+        								<li><a href="blockTrade.jsp?act=otcSingleNonPaired">單一證券逐筆交易</a></li>
+        								<li><a href="blockTrade.jsp?act=otcSinglePaired">單一證券配對交易</a></li>
+        								<li><a href="blockTrade.jsp?act=otcBasketNonPaired">股票組合逐筆交易</a></li>
+        								<li><a href="blockTrade.jsp?act=otcBasketPaired">股票組合配對交易</a></li>
+        								<li><a href="blockTrade.jsp?act=otcPrice">鉅額交易<br>漲跌停價格</a></li>
+        							</ul>
+        						</li>
+        					</ul>
+        				</div>
+        				</li>
+        				<li><a href="oddTrade.jsp">零股揭示</a></li>
+					</ul>
+				</div>
+
+<!--
+				<li><a class="top-a"><b>鉅額揭示</b></a>
+				<div class="col2 left">
+					<ul class="colLeft">
+						<li>
+						<a>集中市場</a>
+							<ul>
+								<li><a href="blockTrade.jsp?act=tseSingleNonPaired">單一證券逐筆交易</a></li>
+								<li><a href="blockTrade.jsp?act=tseSinglePaired">單一證券配對交易</a></li>
+								<li><a href="blockTrade.jsp?act=tseBasketNonPaired">股票組合逐筆交易</a></li>
+								<li><a href="blockTrade.jsp?act=tseBasketPaired">股票組合配對交易</a></li>
+								<li><a href="blockTrade.jsp?act=tsePrice">鉅額交易<BR>漲跌停價格</a></li>
+							</ul>
+						</li>
+						<li>
+							<a>上櫃市場</a>
+							<ul>
+								<li><a href="blockTrade.jsp?act=otcSingleNonPaired">單一證券逐筆交易</a></li>
+								<li><a href="blockTrade.jsp?act=otcSinglePaired">單一證券配對交易</a></li>
+								<li><a href="blockTrade.jsp?act=otcBasketNonPaired">股票組合逐筆交易</a></li>
+								<li><a href="blockTrade.jsp?act=otcBasketPaired">股票組合配對交易</a></li>
+								<li><a href="blockTrade.jsp?act=otcPrice">鉅額交易<BR>漲跌停價格</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				</li>
+				<li><a class="top-a" href="oddTrade.jsp"><b>零股揭示</b></a></li>
+-->
+				</li><li><a class="top-a sf-with-ul"><b>借券查詢</b><span class="sf-sub-indicator"> »</span><span class="sf-sub-indicator"> »</span></a>
+				<div class="col1 right">
+					<ul class="colSingle">
+						<li><a href="sblInquiry.jsp">借券中心個股<br>借券成交查詢</a></li>
+						<li><a href="sblInquiryCap.jsp">借券賣出可用餘額</a></li>
+						<li><a href="sblInquiryBrk.jsp">證券商或證金公司<br>可出借證券資訊</a></li>
+					</ul>
+				</div>
+				</li>
+				
+				<li><a class="top-a" href="https://mops.twse.com.tw/server-java/t39sb01?step=0" target="_blank"><img src="images/newpage.png" style="float:left;border:0">&nbsp;<b>市場公告 (公開資訊觀測站)</b></a></li>
+				
+
+				<!-- link  -->
+				<!--
+				<li><a class="top-a"><b>相關網站</b></a>
+				<div class="col1 left">
+					<ul class="colSingle">
+						<li><a href="https://www.twse.com.tw/" target="_blank">臺灣證券交易所</a></li>
+						<li><a href="https://mops.twse.com.tw/" target="_blank">公開資訊觀測站</a></li>
+						<li><a href="https://www.tpex.org.tw/" target="_blank">證券櫃檯買賣中心</a></li>
+						<li><a href="https://eshop.twse.com.tw/" target="_blank">網路資訊商店</a></li>
+					</ul>
+				</div>
+				-->
+			</ul>
+		</div>
+		</center>
+
+
+
+
+
+<div id="content">
+
+
+	<select id="tseSelect" class="cSelect"><option> = 請選擇上市類股 = </option><option value="A0-封閉式基金">封閉式基金</option><option value="B0-ETF">ETF</option><option value="B1-ETN">ETN</option><option value="C0-受益證券">受益證券</option><option value="D1-認購權證 (不含牛證)">認購權證 (不含牛證)</option><option value="D2-認售權證 (不含熊證)">認售權證 (不含熊證)</option><option value="DC-牛證(不含可展延牛證)">牛證(不含可展延牛證)</option><option value="DB-熊證(不含可展延牛證)">熊證(不含可展延牛證)</option><option value="DX-可展延牛證">可展延牛證</option><option value="DY-可展延熊證">可展延熊證</option><option value="H0-附認股權特別股">附認股權特別股</option><option value="I0-附認股權公司債">附認股權公司債</option><option value="J0-認股權憑證">認股權憑證</option><option value="01-水泥工業" selected="">水泥工業</option><option value="02-食品工業">食品工業</option><option value="03-塑膠工業">塑膠工業</option><option value="04-紡織纖維">紡織纖維</option><option value="05-電機機械">電機機械</option><option value="06-電器電纜">電器電纜</option><option value="08-玻璃陶瓷">玻璃陶瓷</option><option value="09-造紙工業">造紙工業</option><option value="10-鋼鐵工業">鋼鐵工業</option><option value="11-橡膠工業">橡膠工業</option><option value="12-汽車工業">汽車工業</option><option value="14-建材營造">建材營造</option><option value="15-航運業">航運業</option><option value="16-觀光事業">觀光事業</option><option value="17-金融保險">金融保險</option><option value="18-貿易百貨">貿易百貨</option><option value="19-綜合">綜合</option><option value="20-其他">其他</option><option value="21-化學工業">化學工業</option><option value="22-生技醫療業">生技醫療業</option><option value="23-油電燃氣業">油電燃氣業</option><option value="24-半導體業">半導體業</option><option value="25-電腦及週邊設備業">電腦及週邊設備業</option><option value="26-光電業">光電業</option><option value="27-通信網路業">通信網路業</option><option value="28-電子零組件業">電子零組件業</option><option value="29-電子通路業">電子通路業</option><option value="30-資訊服務業">資訊服務業</option><option value="31-其他電子業">其他電子業</option><option value="E0-存託憑證">存託憑證</option><option value="O0-中央登錄公債">中央登錄公債</option><option value="P0-外國債券">外國債券</option><option value="Q0-海外第一上市">海外第一上市</option></select>
+	<select id="otcSelect" class="cSelect"><option selected="selected"> = 請選擇上櫃類股 = </option><option value="B0-ETF">ETF</option><option value="B1-ETN">ETN</option><option value="C0-不動產證券化商品">不動產證券化商品</option><option value="D1-認購權證 (不含牛證)">認購權證 (不含牛證)</option><option value="D2-認售權證 (不含熊證)">認售權證 (不含熊證)</option><option value="DC-牛證(不含可展延牛證)">牛證(不含可展延牛證)</option><option value="DB-熊證(不含可展延牛證)">熊證(不含可展延牛證)</option><option value="DX-可展延牛證">可展延牛證</option><option value="DY-可展延熊證">可展延熊證</option><option value="02-食品工業">食品工業</option><option value="03-塑膠工業">塑膠工業</option><option value="04-紡織纖維">紡織纖維</option><option value="05-電機機械">電機機械</option><option value="06-電器電纜">電器電纜</option><option value="08-玻璃陶瓷">玻璃陶瓷</option><option value="10-鋼鐵工業">鋼鐵工業</option><option value="11-橡膠工業">橡膠工業</option><option value="14-建材營造">建材營造</option><option value="15-航運業">航運業</option><option value="16-觀光事業">觀光事業</option><option value="17-金融業">金融業</option><option value="18-貿易百貨">貿易百貨</option><option value="20-其他">其他</option><option value="21-化學工業">化學工業</option><option value="22-生技醫療">生技醫療</option><option value="23-油電燃氣業">油電燃氣業</option><option value="24-半導體業">半導體業</option><option value="25-電腦及週邊設備業">電腦及週邊設備業</option><option value="26-光電業">光電業</option><option value="27-通信網路業">通信網路業</option><option value="28-電子零組件業">電子零組件業</option><option value="29-電子通路業">電子通路業</option><option value="30-資訊服務業">資訊服務業</option><option value="31-其他電子業">其他電子業</option><option value="32-文化創意業">文化創意業</option><option value="33-農業科技業">農業科技業</option><option value="34-電子商務">電子商務</option><option value="E0-存託憑證">存託憑證</option><option value="80-管理股票">管理股票</option><option value="Q0-海外第一上櫃">海外第一上櫃</option></select>
+	<br><br>
+
+
+<div class="groupDiv">
+	
+	<span id="INDICES"></span>
+	<div style="float:right" id="userDelayView"> 
+		隔 <label id="userDelay0">5</label> 秒自動更新
+	</div>
+	<br>
+	<label class="marketName">[上市]</label> <label class="indName" id="indName">海外第一上市</label>
+		
+		
+		<label class="title" style="float:right;">(元，交易單位)</label>
+			
+	<br>
+	<table id="group" class="newspaper-a">
+		<thead>
+			<tr><th class="header"></th>
+			
+            
+			<th class="header">最近<br>成交價</th>
+			<th class="header">漲跌價差<br>(百分比)</th>
+			
+			
+			
+			<th align="center" class="header">當盤<br>成交量</th>
+			<th align="center" class="header">累積<br>成交量</th>
+            
+            <th align="center" class="header">試算參考<br>成交價</th>
+            <th align="center" class="header">試算參考<br>成交量</th>
+            
+            
+			<th align="center" class="header">揭示<br>買價</th>
+			<th align="center" class="header">揭示<br>買量</th>
+			<th align="center" class="header">揭示<br>賣價</th>
+			<th align="center" class="header">揭示<br>賣量</th>
+			
+			
+			<th class="header">開盤</th>		
+			<th class="header">最高</th>
+			<th class="header">最低</th>
+			
+			<!--<th>昨收</th>-->
+			
+			<!-- <th>累積<BR>成交量</th> -->
+			<th class="header">揭示時間</th>
+			
+			
+			
+			
+			<th class="header">
+				說明
+				
+			</th>
+		</tr></thead>
+		<tbody>
+		<tr id="1256_tr"><td id="1256_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1256" title="1256鮮活控股股份有限公司" class="linkTip">1256</a>   <a href="fibest.jsp?goback=1&amp;stock=1256" title="1256鮮活控股股份有限公司">鮮活果汁-KY</a></td><td id="1256_z" style="color: rgb(255, 0, 0);">203.00</td><td><label id="1256_diff" style="color: rgb(255, 0, 0);">▲3.00</label> <label id="1256_pre" style="color: rgb(255, 0, 0);"> (1.50%)</label></td><td id="1256_tv">6</td><td id="1256_v">84</td><td id="1256_Reference_price">-</td><td id="1256_Reference_volume">-</td><td id="1256_b">203.00</td><td id="1256_g">4</td><td id="1256_a">204.00</td><td id="1256_f">4</td><td id="1256_o">200.50</td><td id="1256_h">204.00</td><td id="1256_l">200.50</td><td id="1256_t">13:30:00</td><td id="1256_comment" class="comment"></td></tr><tr id="1262_tr"><td id="1262_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1262" title="1262英屬開曼群島綠悅控股有限公司" class="linkTip">1262</a>   <a href="fibest.jsp?goback=1&amp;stock=1262" title="1262英屬開曼群島綠悅控股有限公司">綠悅-KY</a></td><td id="1262_z" style="color: rgb(255, 0, 0);">39.65</td><td><label id="1262_diff" style="color: rgb(255, 0, 0);">▲0.05</label> <label id="1262_pre" style="color: rgb(255, 0, 0);"> (0.13%)</label></td><td id="1262_tv">6</td><td id="1262_v">280</td><td id="1262_Reference_price">-</td><td id="1262_Reference_volume">-</td><td id="1262_b">39.65</td><td id="1262_g">51</td><td id="1262_a">39.70</td><td id="1262_f">16</td><td id="1262_o">39.60</td><td id="1262_h">39.80</td><td id="1262_l">39.60</td><td id="1262_t">13:30:00</td><td id="1262_comment" class="comment"></td></tr><tr id="1337_tr"><td id="1337_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1337" title="1337亞洲塑膠再生資源控股有限公司" class="linkTip">1337</a>   <a href="fibest.jsp?goback=1&amp;stock=1337" title="1337亞洲塑膠再生資源控股有限公司">再生-KY</a></td><td id="1337_z" style="color: rgb(255, 0, 0);">5.94</td><td><label id="1337_diff" style="color: rgb(255, 0, 0);">▲0.08</label> <label id="1337_pre" style="color: rgb(255, 0, 0);"> (1.37%)</label></td><td id="1337_tv">26</td><td id="1337_v">335</td><td id="1337_Reference_price">-</td><td id="1337_Reference_volume">-</td><td id="1337_b">5.93</td><td id="1337_g">2</td><td id="1337_a">5.94</td><td id="1337_f">2</td><td id="1337_o">5.87</td><td id="1337_h">5.96</td><td id="1337_l">5.86</td><td id="1337_t">13:30:00</td><td id="1337_comment" class="comment"></td></tr><tr id="1338_tr"><td id="1338_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1338" title="1338廣華控股有限公司" class="linkTip">1338</a>   <a href="fibest.jsp?goback=1&amp;stock=1338" title="1338廣華控股有限公司">廣華-KY</a></td><td id="1338_z" style="color: rgb(16, 80, 16);">67.80</td><td><label id="1338_diff" style="color: rgb(16, 80, 16);">▼0.1</label> <label id="1338_pre" style="color: rgb(16, 80, 16);"> (-0.15%)</label></td><td id="1338_tv">16</td><td id="1338_v">181</td><td id="1338_Reference_price">-</td><td id="1338_Reference_volume">-</td><td id="1338_b">67.80</td><td id="1338_g">2</td><td id="1338_a">68.20</td><td id="1338_f">2</td><td id="1338_o">67.90</td><td id="1338_h">68.30</td><td id="1338_l">67.70</td><td id="1338_t">13:30:00</td><td id="1338_comment" class="comment"></td></tr><tr id="1340_tr"><td id="1340_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1340" title="1340勝悅新材料有限公司" class="linkTip">1340</a>   <a href="fibest.jsp?goback=1&amp;stock=1340" title="1340勝悅新材料有限公司">勝悅-KY</a></td><td id="1340_z" style="color: rgb(255, 0, 0);">16.05</td><td><label id="1340_diff" style="color: rgb(255, 0, 0);">▲0.40</label> <label id="1340_pre" style="color: rgb(255, 0, 0);"> (2.56%)</label></td><td id="1340_tv">12</td><td id="1340_v">225</td><td id="1340_Reference_price">-</td><td id="1340_Reference_volume">-</td><td id="1340_b">16.05</td><td id="1340_g">3</td><td id="1340_a">16.10</td><td id="1340_f">10</td><td id="1340_o">15.65</td><td id="1340_h">16.10</td><td id="1340_l">15.65</td><td id="1340_t">13:30:00</td><td id="1340_comment" class="comment"></td></tr><tr id="1341_tr"><td id="1341_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1341" title="1341富林塑膠工業(開曼)控股股份有限公司" class="linkTip">1341</a>   <a href="fibest.jsp?goback=1&amp;stock=1341" title="1341富林塑膠工業(開曼)控股股份有限公司">富林-KY</a></td><td id="1341_z" style="color: rgb(255, 0, 0);">58.70</td><td><label id="1341_diff" style="color: rgb(255, 0, 0);">▲0.20</label> <label id="1341_pre" style="color: rgb(255, 0, 0);"> (0.34%)</label></td><td id="1341_tv">1</td><td id="1341_v">7</td><td id="1341_Reference_price">-</td><td id="1341_Reference_volume">-</td><td id="1341_b">58.30</td><td id="1341_g">3</td><td id="1341_a">58.70</td><td id="1341_f">1</td><td id="1341_o">59.30</td><td id="1341_h">59.30</td><td id="1341_l">58.50</td><td id="1341_t">13:30:00</td><td id="1341_comment" class="comment"></td></tr><tr id="1589_tr"><td id="1589_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1589" title="1589永冠能源科技集團有限公司" class="linkTip">1589</a>   <a href="fibest.jsp?goback=1&amp;stock=1589" title="1589永冠能源科技集團有限公司">永冠-KY</a></td><td id="1589_z" style="color: rgb(255, 0, 0);">50.10</td><td><label id="1589_diff" style="color: rgb(255, 0, 0);">▲1.25</label> <label id="1589_pre" style="color: rgb(255, 0, 0);"> (2.56%)</label></td><td id="1589_tv">36</td><td id="1589_v">1167</td><td id="1589_Reference_price">-</td><td id="1589_Reference_volume">-</td><td id="1589_b">50.10</td><td id="1589_g">15</td><td id="1589_a">50.20</td><td id="1589_f">1</td><td id="1589_o">48.60</td><td id="1589_h">50.30</td><td id="1589_l">48.55</td><td id="1589_t">13:30:00</td><td id="1589_comment" class="comment"></td></tr><tr id="1590_tr"><td id="1590_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1590" title="1590AIRTAC INTERNATIONAL GROUP" class="linkTip">1590</a>   <a href="fibest.jsp?goback=1&amp;stock=1590" title="1590AIRTAC INTERNATIONAL GROUP">亞德客-KY</a></td><td id="1590_z" style="color: rgb(255, 0, 0);">327.50</td><td><label id="1590_diff" style="color: rgb(255, 0, 0);">▲4.00</label> <label id="1590_pre" style="color: rgb(255, 0, 0);"> (1.24%)</label></td><td id="1590_tv">117</td><td id="1590_v">727</td><td id="1590_Reference_price">-</td><td id="1590_Reference_volume">-</td><td id="1590_b">327.00</td><td id="1590_g">15</td><td id="1590_a">327.50</td><td id="1590_f">2</td><td id="1590_o">327.00</td><td id="1590_h">331.00</td><td id="1590_l">324.50</td><td id="1590_t">13:30:00</td><td id="1590_comment" class="comment"></td></tr><tr id="1592_tr"><td id="1592_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1592" title="1592英瑞國際有限公司" class="linkTip">1592</a>   <a href="fibest.jsp?goback=1&amp;stock=1592" title="1592英瑞國際有限公司">英瑞-KY</a></td><td id="1592_z" style="color: rgb(255, 0, 0);">19.55</td><td><label id="1592_diff" style="color: rgb(255, 0, 0);">▲0.35</label> <label id="1592_pre" style="color: rgb(255, 0, 0);"> (1.82%)</label></td><td id="1592_tv">6</td><td id="1592_v">168</td><td id="1592_Reference_price">-</td><td id="1592_Reference_volume">-</td><td id="1592_b">19.55</td><td id="1592_g">3</td><td id="1592_a">19.65</td><td id="1592_f">3</td><td id="1592_o">19.35</td><td id="1592_h">19.65</td><td id="1592_l">19.30</td><td id="1592_t">13:30:00</td><td id="1592_comment" class="comment"></td></tr><tr id="1626_tr"><td id="1626_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=1626" title="1626艾美特(開曼)國際有限公司" class="linkTip">1626</a>   <a href="fibest.jsp?goback=1&amp;stock=1626" title="1626艾美特(開曼)國際有限公司">艾美特-KY</a></td><td id="1626_z" style="color: rgb(255, 0, 0);">34.10</td><td><label id="1626_diff" style="color: rgb(255, 0, 0);">▲0.30</label> <label id="1626_pre" style="color: rgb(255, 0, 0);"> (0.89%)</label></td><td id="1626_tv">37</td><td id="1626_v">456</td><td id="1626_Reference_price">-</td><td id="1626_Reference_volume">-</td><td id="1626_b">33.95</td><td id="1626_g">2</td><td id="1626_a">34.10</td><td id="1626_f">12</td><td id="1626_o">33.80</td><td id="1626_h">34.10</td><td id="1626_l">33.30</td><td id="1626_t">13:30:00</td><td id="1626_comment" class="comment"></td></tr><tr id="2115_tr"><td id="2115_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2115" title="2115英屬開曼群島六暉控股股份有限公司" class="linkTip">2115</a>   <a href="fibest.jsp?goback=1&amp;stock=2115" title="2115英屬開曼群島六暉控股股份有限公司">六暉-KY</a></td><td id="2115_z" style="color: rgb(16, 80, 16);">39.80</td><td><label id="2115_diff" style="color: rgb(16, 80, 16);">▼0.05</label> <label id="2115_pre" style="color: rgb(16, 80, 16);"> (-0.13%)</label></td><td id="2115_tv">3</td><td id="2115_v">10</td><td id="2115_Reference_price">-</td><td id="2115_Reference_volume">-</td><td id="2115_b">39.60</td><td id="2115_g">1</td><td id="2115_a">39.85</td><td id="2115_f">3</td><td id="2115_o">39.80</td><td id="2115_h">39.80</td><td id="2115_l">39.50</td><td id="2115_t">13:30:00</td><td id="2115_comment" class="comment"></td></tr><tr id="2236_tr"><td id="2236_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2236" title="2236百達精密工業股份有限公司" class="linkTip">2236</a>   <a href="fibest.jsp?goback=1&amp;stock=2236" title="2236百達精密工業股份有限公司">百達-KY</a></td><td id="2236_z" style="color: rgb(0, 0, 0);">24.40</td><td><label id="2236_diff" style="color: rgb(0, 0, 0);">0.00</label> <label id="2236_pre" style="color: rgb(0, 0, 0);"> (0.00%)</label></td><td id="2236_tv">4</td><td id="2236_v">12</td><td id="2236_Reference_price">-</td><td id="2236_Reference_volume">-</td><td id="2236_b">24.40</td><td id="2236_g">1</td><td id="2236_a">24.65</td><td id="2236_f">2</td><td id="2236_o">24.50</td><td id="2236_h">24.50</td><td id="2236_l">24.40</td><td id="2236_t">13:30:00</td><td id="2236_comment" class="comment"></td></tr><tr id="2239_tr"><td id="2239_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2239" title="2239開曼英利工業股份有限公司" class="linkTip">2239</a>   <a href="fibest.jsp?goback=1&amp;stock=2239" title="2239開曼英利工業股份有限公司">英利-KY</a></td><td id="2239_z" style="color: rgb(0, 0, 0);">102.50</td><td><label id="2239_diff" style="color: rgb(0, 0, 0);">0.00</label> <label id="2239_pre" style="color: rgb(0, 0, 0);"> (0.00%)</label></td><td id="2239_tv">1</td><td id="2239_v">33</td><td id="2239_Reference_price">-</td><td id="2239_Reference_volume">-</td><td id="2239_b">102.50</td><td id="2239_g">5</td><td id="2239_a">103.50</td><td id="2239_f">7</td><td id="2239_o">102.50</td><td id="2239_h">104.00</td><td id="2239_l">102.50</td><td id="2239_t">13:30:00</td><td id="2239_comment" class="comment"></td></tr><tr id="2243_tr"><td id="2243_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2243" title="2243宏旭控股股份有限公司" class="linkTip">2243</a>   <a href="fibest.jsp?goback=1&amp;stock=2243" title="2243宏旭控股股份有限公司">宏旭-KY</a></td><td id="2243_z" style="color: rgb(0, 0, 0);">15.00</td><td><label id="2243_diff" style="color: rgb(0, 0, 0);">0.00</label> <label id="2243_pre" style="color: rgb(0, 0, 0);"> (0.00%)</label></td><td id="2243_tv">1</td><td id="2243_v">30</td><td id="2243_Reference_price">-</td><td id="2243_Reference_volume">-</td><td id="2243_b">15.00</td><td id="2243_g">5</td><td id="2243_a">15.10</td><td id="2243_f">2</td><td id="2243_o">15.10</td><td id="2243_h">15.20</td><td id="2243_l">15.00</td><td id="2243_t">13:30:00</td><td id="2243_comment" class="comment"></td></tr><tr id="2637_tr"><td id="2637_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2637" title="2637慧洋海運股份有限公司" class="linkTip">2637</a>   <a href="fibest.jsp?goback=1&amp;stock=2637" title="2637慧洋海運股份有限公司">慧洋-KY</a></td><td id="2637_z" style="color: rgb(255, 0, 0);">32.60</td><td><label id="2637_diff" style="color: rgb(255, 0, 0);">▲0.80</label> <label id="2637_pre" style="color: rgb(255, 0, 0);"> (2.52%)</label></td><td id="2637_tv">62</td><td id="2637_v">3932</td><td id="2637_Reference_price">-</td><td id="2637_Reference_volume">-</td><td id="2637_b">32.60</td><td id="2637_g">12</td><td id="2637_a">32.65</td><td id="2637_f">61</td><td id="2637_o">32.15</td><td id="2637_h">32.65</td><td id="2637_l">32.15</td><td id="2637_t">13:30:00</td><td id="2637_comment" class="comment"></td></tr><tr id="2723_tr"><td id="2723_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2723" title="2723GOURMET MASTER" class="linkTip">2723</a>   <a href="fibest.jsp?goback=1&amp;stock=2723" title="2723GOURMET MASTER">美食-KY</a></td><td id="2723_z" style="color: rgb(255, 0, 0);">150.50</td><td><label id="2723_diff" style="color: rgb(255, 0, 0);">▲0.50</label> <label id="2723_pre" style="color: rgb(255, 0, 0);"> (0.33%)</label></td><td id="2723_tv">29</td><td id="2723_v">460</td><td id="2723_Reference_price">-</td><td id="2723_Reference_volume">-</td><td id="2723_b">150.50</td><td id="2723_g">9</td><td id="2723_a">151.00</td><td id="2723_f">8</td><td id="2723_o">151.00</td><td id="2723_h">152.00</td><td id="2723_l">148.50</td><td id="2723_t">13:30:00</td><td id="2723_comment" class="comment"></td></tr><tr id="2923_tr"><td id="2923_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2923" title="2923鼎固控股有限公司" class="linkTip">2923</a>   <a href="fibest.jsp?goback=1&amp;stock=2923" title="2923鼎固控股有限公司">鼎固-KY</a></td><td id="2923_z" style="color: rgb(16, 80, 16);">23.70</td><td><label id="2923_diff" style="color: rgb(16, 80, 16);">▼0.1</label> <label id="2923_pre" style="color: rgb(16, 80, 16);"> (-0.42%)</label></td><td id="2923_tv">5</td><td id="2923_v">28</td><td id="2923_Reference_price">-</td><td id="2923_Reference_volume">-</td><td id="2923_b">23.65</td><td id="2923_g">1</td><td id="2923_a">23.70</td><td id="2923_f">13</td><td id="2923_o">23.95</td><td id="2923_h">24.10</td><td id="2923_l">23.70</td><td id="2923_t">13:30:00</td><td id="2923_comment" class="comment"></td></tr><tr id="2929_tr"><td id="2929_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2929" title="2929淘帝國際控股有限公司" class="linkTip">2929</a>   <a href="fibest.jsp?goback=1&amp;stock=2929" title="2929淘帝國際控股有限公司">淘帝-KY</a></td><td id="2929_z" style="color: rgb(255, 0, 0);">98.30</td><td><label id="2929_diff" style="color: rgb(255, 0, 0);">▲0.70</label> <label id="2929_pre" style="color: rgb(255, 0, 0);"> (0.72%)</label></td><td id="2929_tv">15</td><td id="2929_v">247</td><td id="2929_Reference_price">-</td><td id="2929_Reference_volume">-</td><td id="2929_b">98.30</td><td id="2929_g">3</td><td id="2929_a">98.40</td><td id="2929_f">7</td><td id="2929_o">98.60</td><td id="2929_h">98.70</td><td id="2929_l">97.70</td><td id="2929_t">13:30:00</td><td id="2929_comment" class="comment"></td></tr><tr id="2936_tr"><td id="2936_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2936" title="2936客思達股份有限公司" class="linkTip">2936</a>   <a href="fibest.jsp?goback=1&amp;stock=2936" title="2936客思達股份有限公司">客思達-KY</a></td><td id="2936_z" style="color: rgb(16, 80, 16);">22.75</td><td><label id="2936_diff" style="color: rgb(16, 80, 16);">▼0.25</label> <label id="2936_pre" style="color: rgb(16, 80, 16);"> (-1.09%)</label></td><td id="2936_tv">1</td><td id="2936_v">9</td><td id="2936_Reference_price">-</td><td id="2936_Reference_volume">-</td><td id="2936_b">22.75</td><td id="2936_g">1</td><td id="2936_a">22.90</td><td id="2936_f">2</td><td id="2936_o">22.75</td><td id="2936_h">22.90</td><td id="2936_l">22.70</td><td id="2936_t">13:30:00</td><td id="2936_comment" class="comment"></td></tr><tr id="2939_tr"><td id="2939_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=2939" title="2939凱羿國際集團股份有限公司" class="linkTip">2939</a>   <a href="fibest.jsp?goback=1&amp;stock=2939" title="2939凱羿國際集團股份有限公司">凱羿-KY</a></td><td id="2939_z" style="color: rgb(16, 80, 16);">103.50</td><td><label id="2939_diff" style="color: rgb(16, 80, 16);">▼1</label> <label id="2939_pre" style="color: rgb(16, 80, 16);"> (-0.96%)</label></td><td id="2939_tv">2</td><td id="2939_v">36</td><td id="2939_Reference_price">-</td><td id="2939_Reference_volume">-</td><td id="2939_b">102.50</td><td id="2939_g">5</td><td id="2939_a">104.50</td><td id="2939_f">2</td><td id="2939_o">103.00</td><td id="2939_h">105.00</td><td id="2939_l">100.50</td><td id="2939_t">13:30:00</td><td id="2939_comment" class="comment"></td></tr><tr id="3661_tr"><td id="3661_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=3661" title="3661世芯電子股份有限公司" class="linkTip">3661</a>   <a href="fibest.jsp?goback=1&amp;stock=3661" title="3661世芯電子股份有限公司">世芯-KY</a></td><td id="3661_z" style="color: rgb(16, 80, 16);">131.50</td><td><label id="3661_diff" style="color: rgb(16, 80, 16);">▼5.5</label> <label id="3661_pre" style="color: rgb(16, 80, 16);"> (-4.01%)</label></td><td id="3661_tv">335</td><td id="3661_v">5315</td><td id="3661_Reference_price">-</td><td id="3661_Reference_volume">-</td><td id="3661_b">131.50</td><td id="3661_g">118</td><td id="3661_a">132.00</td><td id="3661_f">7</td><td id="3661_o">137.00</td><td id="3661_h">137.00</td><td id="3661_l">131.50</td><td id="3661_t">13:30:00</td><td id="3661_comment" class="comment"></td></tr><tr id="3665_tr"><td id="3665_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=3665" title="3665貿聯控股公司" class="linkTip">3665</a>   <a href="fibest.jsp?goback=1&amp;stock=3665" title="3665貿聯控股公司">貿聯-KY</a></td><td id="3665_z" style="color: rgb(255, 0, 0);">222.50</td><td><label id="3665_diff" style="color: rgb(255, 0, 0);">▲7.00</label> <label id="3665_pre" style="color: rgb(255, 0, 0);"> (3.25%)</label></td><td id="3665_tv">89</td><td id="3665_v">1210</td><td id="3665_Reference_price">-</td><td id="3665_Reference_volume">-</td><td id="3665_b">222.00</td><td id="3665_g">5</td><td id="3665_a">222.50</td><td id="3665_f">11</td><td id="3665_o">217.50</td><td id="3665_h">222.50</td><td id="3665_l">217.00</td><td id="3665_t">13:30:00</td><td id="3665_comment" class="comment"></td></tr><tr id="3673_tr"><td id="3673_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=3673" title="3673TPK HOLDING CO. LTD." class="linkTip">3673</a>   <a href="fibest.jsp?goback=1&amp;stock=3673" title="3673TPK HOLDING CO. LTD.">TPK-KY</a></td><td id="3673_z" style="color: rgb(255, 0, 0);">57.10</td><td><label id="3673_diff" style="color: rgb(255, 0, 0);">▲0.30</label> <label id="3673_pre" style="color: rgb(255, 0, 0);"> (0.53%)</label></td><td id="3673_tv">294</td><td id="3673_v">3111</td><td id="3673_Reference_price">-</td><td id="3673_Reference_volume">-</td><td id="3673_b">57.10</td><td id="3673_g">66</td><td id="3673_a">57.20</td><td id="3673_f">143</td><td id="3673_o">56.80</td><td id="3673_h">57.20</td><td id="3673_l">56.10</td><td id="3673_t">13:30:00</td><td id="3673_comment" class="comment"></td></tr><tr id="4137_tr"><td id="4137_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4137" title="4137麗豐股份有限公司" class="linkTip">4137</a>   <a href="fibest.jsp?goback=1&amp;stock=4137" title="4137麗豐股份有限公司">麗豐-KY</a></td><td id="4137_z" style="color: rgb(255, 0, 0);">223.00</td><td><label id="4137_diff" style="color: rgb(255, 0, 0);">▲2.00</label> <label id="4137_pre" style="color: rgb(255, 0, 0);"> (0.90%)</label></td><td id="4137_tv">15</td><td id="4137_v">239</td><td id="4137_Reference_price">-</td><td id="4137_Reference_volume">-</td><td id="4137_b">222.50</td><td id="4137_g">3</td><td id="4137_a">223.00</td><td id="4137_f">1</td><td id="4137_o">220.00</td><td id="4137_h">223.50</td><td id="4137_l">220.00</td><td id="4137_t">13:30:00</td><td id="4137_comment" class="comment"></td></tr><tr id="4141_tr"><td id="4141_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4141" title="4141龍燈環球農業科技有限公司" class="linkTip">4141</a>   <a href="fibest.jsp?goback=1&amp;stock=4141" title="4141龍燈環球農業科技有限公司">龍燈-KY</a></td><td id="4141_z" style="color: rgb(255, 0, 0);">17.00</td><td><label id="4141_diff" style="color: rgb(255, 0, 0);">▲0.15</label> <label id="4141_pre" style="color: rgb(255, 0, 0);"> (0.89%)</label></td><td id="4141_tv">3</td><td id="4141_v">83</td><td id="4141_Reference_price">-</td><td id="4141_Reference_volume">-</td><td id="4141_b">16.95</td><td id="4141_g">5</td><td id="4141_a">17.00</td><td id="4141_f">1</td><td id="4141_o">16.80</td><td id="4141_h">17.00</td><td id="4141_l">16.80</td><td id="4141_t">13:30:00</td><td id="4141_comment" class="comment"></td></tr><tr id="4144_tr"><td id="4144_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4144" title="4144康聯控股有限公司" class="linkTip">4144</a>   <a href="fibest.jsp?goback=1&amp;stock=4144" title="4144康聯控股有限公司">康聯-KY</a></td><td id="4144_z" style="color: rgb(255, 0, 0);">29.50</td><td><label id="4144_diff" style="color: rgb(255, 0, 0);">▲0.70</label> <label id="4144_pre" style="color: rgb(255, 0, 0);"> (2.43%)</label></td><td id="4144_tv">22</td><td id="4144_v">117</td><td id="4144_Reference_price">-</td><td id="4144_Reference_volume">-</td><td id="4144_b">29.20</td><td id="4144_g">2</td><td id="4144_a">29.60</td><td id="4144_f">1</td><td id="4144_o">28.65</td><td id="4144_h">29.50</td><td id="4144_l">28.65</td><td id="4144_t">13:30:00</td><td id="4144_comment" class="comment"></td></tr><tr id="4148_tr"><td id="4148_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4148" title="4148全宇生技控股有限公司" class="linkTip">4148</a>   <a href="fibest.jsp?goback=1&amp;stock=4148" title="4148全宇生技控股有限公司">全宇生技-KY</a></td><td id="4148_z" style="color: rgb(16, 80, 16);">49.15</td><td><label id="4148_diff" style="color: rgb(16, 80, 16);">▼0.05</label> <label id="4148_pre" style="color: rgb(16, 80, 16);"> (-0.10%)</label></td><td id="4148_tv">5</td><td id="4148_v">36</td><td id="4148_Reference_price">-</td><td id="4148_Reference_volume">-</td><td id="4148_b">49.10</td><td id="4148_g">1</td><td id="4148_a">49.20</td><td id="4148_f">3</td><td id="4148_o">49.20</td><td id="4148_h">49.50</td><td id="4148_l">49.00</td><td id="4148_t">13:30:00</td><td id="4148_comment" class="comment"></td></tr><tr id="4190_tr"><td id="4190_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4190" title="4190佐登妮絲（開曼）股份有限公司" class="linkTip">4190</a>   <a href="fibest.jsp?goback=1&amp;stock=4190" title="4190佐登妮絲（開曼）股份有限公司">佐登-KY</a></td><td id="4190_z" style="color: rgb(255, 0, 0);">103.50</td><td><label id="4190_diff" style="color: rgb(255, 0, 0);">▲2.00</label> <label id="4190_pre" style="color: rgb(255, 0, 0);"> (1.97%)</label></td><td id="4190_tv">37</td><td id="4190_v">628</td><td id="4190_Reference_price">-</td><td id="4190_Reference_volume">-</td><td id="4190_b">103.50</td><td id="4190_g">36</td><td id="4190_a">104.00</td><td id="4190_f">3</td><td id="4190_o">102.00</td><td id="4190_h">104.50</td><td id="4190_l">101.50</td><td id="4190_t">13:30:00</td><td id="4190_comment" class="comment"></td></tr><tr id="4552_tr"><td id="4552_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4552" title="4552力達控股有限公司" class="linkTip">4552</a>   <a href="fibest.jsp?goback=1&amp;stock=4552" title="4552力達控股有限公司">力達-KY</a></td><td id="4552_z" style="color: rgb(255, 0, 0);">48.85</td><td><label id="4552_diff" style="color: rgb(255, 0, 0);">▲0.40</label> <label id="4552_pre" style="color: rgb(255, 0, 0);"> (0.83%)</label></td><td id="4552_tv">7</td><td id="4552_v">93</td><td id="4552_Reference_price">-</td><td id="4552_Reference_volume">-</td><td id="4552_b">48.85</td><td id="4552_g">2</td><td id="4552_a">48.90</td><td id="4552_f">1</td><td id="4552_o">48.80</td><td id="4552_h">49.00</td><td id="4552_l">48.60</td><td id="4552_t">13:30:00</td><td id="4552_comment" class="comment"></td></tr><tr id="4557_tr"><td id="4557_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4557" title="4557永新控股股份有限公司" class="linkTip">4557</a>   <a href="fibest.jsp?goback=1&amp;stock=4557" title="4557永新控股股份有限公司">永新-KY</a></td><td id="4557_z" style="color: rgb(255, 0, 0);">69.40</td><td><label id="4557_diff" style="color: rgb(255, 0, 0);">▲0.40</label> <label id="4557_pre" style="color: rgb(255, 0, 0);"> (0.58%)</label></td><td id="4557_tv">4</td><td id="4557_v">100</td><td id="4557_Reference_price">-</td><td id="4557_Reference_volume">-</td><td id="4557_b">69.40</td><td id="4557_g">1</td><td id="4557_a">69.60</td><td id="4557_f">1</td><td id="4557_o">69.00</td><td id="4557_h">69.90</td><td id="4557_l">69.00</td><td id="4557_t">13:30:00</td><td id="4557_comment" class="comment"></td></tr><tr id="4560_tr"><td id="4560_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4560" title="4560強信機械科技股份有限公司" class="linkTip">4560</a>   <a href="fibest.jsp?goback=1&amp;stock=4560" title="4560強信機械科技股份有限公司">強信-KY</a></td><td id="4560_z" style="color: rgb(255, 0, 0);">51.50</td><td><label id="4560_diff" style="color: rgb(255, 0, 0);">▲1.10</label> <label id="4560_pre" style="color: rgb(255, 0, 0);"> (2.18%)</label></td><td id="4560_tv">34</td><td id="4560_v">337</td><td id="4560_Reference_price">-</td><td id="4560_Reference_volume">-</td><td id="4560_b">51.50</td><td id="4560_g">3</td><td id="4560_a">51.70</td><td id="4560_f">2</td><td id="4560_o">50.50</td><td id="4560_h">51.50</td><td id="4560_l">50.20</td><td id="4560_t">13:30:00</td><td id="4560_comment" class="comment"></td></tr><tr id="4763_tr"><td id="4763_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4763" title="4763濟南大自然新材料有限公司" class="linkTip">4763</a>   <a href="fibest.jsp?goback=1&amp;stock=4763" title="4763濟南大自然新材料有限公司">材料-KY</a></td><td id="4763_z" style="color: rgb(255, 0, 0);">148.00</td><td><label id="4763_diff" style="color: rgb(255, 0, 0);">▲0.50</label> <label id="4763_pre" style="color: rgb(255, 0, 0);"> (0.34%)</label></td><td id="4763_tv">7</td><td id="4763_v">153</td><td id="4763_Reference_price">-</td><td id="4763_Reference_volume">-</td><td id="4763_b">147.50</td><td id="4763_g">5</td><td id="4763_a">148.00</td><td id="4763_f">5</td><td id="4763_o">148.00</td><td id="4763_h">148.00</td><td id="4763_l">147.00</td><td id="4763_t">13:30:00</td><td id="4763_comment" class="comment"></td></tr><tr id="4807_tr"><td id="4807_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4807" title="4807日成控股股份有限公司" class="linkTip">4807</a>   <a href="fibest.jsp?goback=1&amp;stock=4807" title="4807日成控股股份有限公司">日成-KY</a></td><td id="4807_z" style="color: rgb(16, 80, 16);">29.90</td><td><label id="4807_diff" style="color: rgb(16, 80, 16);">▼0.1</label> <label id="4807_pre" style="color: rgb(16, 80, 16);"> (-0.33%)</label></td><td id="4807_tv">3</td><td id="4807_v">19</td><td id="4807_Reference_price">-</td><td id="4807_Reference_volume">-</td><td id="4807_b">29.90</td><td id="4807_g">4</td><td id="4807_a">30.05</td><td id="4807_f">3</td><td id="4807_o">30.00</td><td id="4807_h">30.05</td><td id="4807_l">29.90</td><td id="4807_t">13:30:00</td><td id="4807_comment" class="comment"></td></tr><tr id="4912_tr"><td id="4912_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4912" title="4912聯德控股股份有限公司" class="linkTip">4912</a>   <a href="fibest.jsp?goback=1&amp;stock=4912" title="4912聯德控股股份有限公司">聯德控股-KY</a></td><td id="4912_z" style="color: rgb(16, 80, 16);">119.50</td><td><label id="4912_diff" style="color: rgb(16, 80, 16);">▼0.5</label> <label id="4912_pre" style="color: rgb(16, 80, 16);"> (-0.42%)</label></td><td id="4912_tv">1</td><td id="4912_v">22</td><td id="4912_Reference_price">-</td><td id="4912_Reference_volume">-</td><td id="4912_b">119.50</td><td id="4912_g">1</td><td id="4912_a">120.50</td><td id="4912_f">3</td><td id="4912_o">119.00</td><td id="4912_h">120.50</td><td id="4912_l">119.00</td><td id="4912_t">13:30:00</td><td id="4912_comment" class="comment"></td></tr><tr id="4927_tr"><td id="4927_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4927" title="4927APEX INTERNATIONAL CO. LTD." class="linkTip">4927</a>   <a href="fibest.jsp?goback=1&amp;stock=4927" title="4927APEX INTERNATIONAL CO. LTD.">泰鼎-KY</a></td><td id="4927_z" style="color: rgb(255, 0, 0);">51.70</td><td><label id="4927_diff" style="color: rgb(255, 0, 0);">▲1.40</label> <label id="4927_pre" style="color: rgb(255, 0, 0);"> (2.78%)</label></td><td id="4927_tv">492</td><td id="4927_v">5896</td><td id="4927_Reference_price">-</td><td id="4927_Reference_volume">-</td><td id="4927_b">51.60</td><td id="4927_g">26</td><td id="4927_a">51.70</td><td id="4927_f">97</td><td id="4927_o">50.50</td><td id="4927_h">51.70</td><td id="4927_l">50.20</td><td id="4927_t">13:30:00</td><td id="4927_comment" class="comment"></td></tr><tr id="4935_tr"><td id="4935_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4935" title="4935茂林光電科技(開曼)股份有限公司" class="linkTip">4935</a>   <a href="fibest.jsp?goback=1&amp;stock=4935" title="4935茂林光電科技(開曼)股份有限公司">茂林-KY</a></td><td id="4935_z" style="color: rgb(255, 0, 0);">74.20</td><td><label id="4935_diff" style="color: rgb(255, 0, 0);">▲1.50</label> <label id="4935_pre" style="color: rgb(255, 0, 0);"> (2.06%)</label></td><td id="4935_tv">35</td><td id="4935_v">1017</td><td id="4935_Reference_price">-</td><td id="4935_Reference_volume">-</td><td id="4935_b">74.10</td><td id="4935_g">1</td><td id="4935_a">74.20</td><td id="4935_f">5</td><td id="4935_o">72.50</td><td id="4935_h">74.70</td><td id="4935_l">71.40</td><td id="4935_t">13:30:00</td><td id="4935_comment" class="comment"></td></tr><tr id="4943_tr"><td id="4943_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4943" title="4943英屬開曼群島商康而富控股股份有限公司" class="linkTip">4943</a>   <a href="fibest.jsp?goback=1&amp;stock=4943" title="4943英屬開曼群島商康而富控股股份有限公司">康控-KY</a></td><td id="4943_z" style="color: rgb(255, 255, 255); background-color: rgb(255, 0, 0);">171.50</td><td><label id="4943_diff" style="color: rgb(255, 0, 0);">▲15.50</label> <label id="4943_pre" style="color: rgb(255, 0, 0);"> (9.94%)</label></td><td id="4943_tv">27</td><td id="4943_v">8712</td><td id="4943_Reference_price">-</td><td id="4943_Reference_volume">-</td><td id="4943_b">171.50</td><td id="4943_g">4220</td><td id="4943_a">-</td><td id="4943_f">-</td><td id="4943_o">167.00</td><td id="4943_h">171.50</td><td id="4943_l">164.50</td><td id="4943_t">13:30:00</td><td id="4943_comment" class="comment"></td></tr><tr id="4958_tr"><td id="4958_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4958" title="4958臻鼎科技控股股份有限公司" class="linkTip">4958</a>   <a href="fibest.jsp?goback=1&amp;stock=4958" title="4958臻鼎科技控股股份有限公司">臻鼎-KY</a></td><td id="4958_z" style="color: rgb(255, 0, 0);">118.50</td><td><label id="4958_diff" style="color: rgb(255, 0, 0);">▲2.50</label> <label id="4958_pre" style="color: rgb(255, 0, 0);"> (2.16%)</label></td><td id="4958_tv">238</td><td id="4958_v">5355</td><td id="4958_Reference_price">-</td><td id="4958_Reference_volume">-</td><td id="4958_b">118.00</td><td id="4958_g">31</td><td id="4958_a">118.50</td><td id="4958_f">21</td><td id="4958_o">115.00</td><td id="4958_h">119.00</td><td id="4958_l">113.00</td><td id="4958_t">13:30:00</td><td id="4958_comment" class="comment"></td></tr><tr id="4977_tr"><td id="4977_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=4977" title="4977眾達科技股份有限公司" class="linkTip">4977</a>   <a href="fibest.jsp?goback=1&amp;stock=4977" title="4977眾達科技股份有限公司">眾達-KY</a></td><td id="4977_z" style="color: rgb(255, 0, 0);">93.30</td><td><label id="4977_diff" style="color: rgb(255, 0, 0);">▲0.20</label> <label id="4977_pre" style="color: rgb(255, 0, 0);"> (0.21%)</label></td><td id="4977_tv">29</td><td id="4977_v">392</td><td id="4977_Reference_price">-</td><td id="4977_Reference_volume">-</td><td id="4977_b">93.30</td><td id="4977_g">8</td><td id="4977_a">93.40</td><td id="4977_f">2</td><td id="4977_o">93.30</td><td id="4977_h">94.20</td><td id="4977_l">92.70</td><td id="4977_t">13:30:00</td><td id="4977_comment" class="comment"></td></tr><tr id="5215_tr"><td id="5215_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5215" title="5215科嘉(開曼)股份有限公司" class="linkTip">5215</a>   <a href="fibest.jsp?goback=1&amp;stock=5215" title="5215科嘉(開曼)股份有限公司">科嘉-KY</a></td><td id="5215_z" style="color: rgb(255, 0, 0);">63.30</td><td><label id="5215_diff" style="color: rgb(255, 0, 0);">▲1.00</label> <label id="5215_pre" style="color: rgb(255, 0, 0);"> (1.61%)</label></td><td id="5215_tv">170</td><td id="5215_v">2212</td><td id="5215_Reference_price">-</td><td id="5215_Reference_volume">-</td><td id="5215_b">63.20</td><td id="5215_g">46</td><td id="5215_a">63.30</td><td id="5215_f">3</td><td id="5215_o">63.10</td><td id="5215_h">64.30</td><td id="5215_l">62.70</td><td id="5215_t">13:30:00</td><td id="5215_comment" class="comment"></td></tr><tr id="5225_tr"><td id="5225_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5225" title="5225東科控股股份有限公司" class="linkTip">5225</a>   <a href="fibest.jsp?goback=1&amp;stock=5225" title="5225東科控股股份有限公司">東科-KY</a></td><td id="5225_z" style="color: rgb(0, 0, 0);">48.00</td><td><label id="5225_diff" style="color: rgb(0, 0, 0);">0.00</label> <label id="5225_pre" style="color: rgb(0, 0, 0);"> (0.00%)</label></td><td id="5225_tv">11</td><td id="5225_v">280</td><td id="5225_Reference_price">-</td><td id="5225_Reference_volume">-</td><td id="5225_b">48.00</td><td id="5225_g">3</td><td id="5225_a">48.20</td><td id="5225_f">1</td><td id="5225_o">48.50</td><td id="5225_h">48.90</td><td id="5225_l">47.25</td><td id="5225_t">13:30:00</td><td id="5225_comment" class="comment"></td></tr><tr id="5243_tr"><td id="5243_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5243" title="5243乙盛精密工業股份有限公司" class="linkTip">5243</a>   <a href="fibest.jsp?goback=1&amp;stock=5243" title="5243乙盛精密工業股份有限公司">乙盛-KY</a></td><td id="5243_z" style="color: rgb(255, 0, 0);">41.90</td><td><label id="5243_diff" style="color: rgb(255, 0, 0);">▲0.60</label> <label id="5243_pre" style="color: rgb(255, 0, 0);"> (1.45%)</label></td><td id="5243_tv">63</td><td id="5243_v">1399</td><td id="5243_Reference_price">-</td><td id="5243_Reference_volume">-</td><td id="5243_b">41.90</td><td id="5243_g">5</td><td id="5243_a">41.95</td><td id="5243_f">3</td><td id="5243_o">41.50</td><td id="5243_h">42.00</td><td id="5243_l">40.90</td><td id="5243_t">13:30:00</td><td id="5243_comment" class="comment"></td></tr><tr id="5264_tr"><td id="5264_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5264" title="5264英屬開曼群島鎧勝控股有限公司" class="linkTip">5264</a>   <a href="fibest.jsp?goback=1&amp;stock=5264" title="5264英屬開曼群島鎧勝控股有限公司">鎧勝-KY</a></td><td id="5264_z" style="color: rgb(255, 0, 0);">53.80</td><td><label id="5264_diff" style="color: rgb(255, 0, 0);">▲2.40</label> <label id="5264_pre" style="color: rgb(255, 0, 0);"> (4.67%)</label></td><td id="5264_tv">221</td><td id="5264_v">4713</td><td id="5264_Reference_price">-</td><td id="5264_Reference_volume">-</td><td id="5264_b">53.70</td><td id="5264_g">12</td><td id="5264_a">53.80</td><td id="5264_f">95</td><td id="5264_o">51.60</td><td id="5264_h">53.80</td><td id="5264_l">51.50</td><td id="5264_t">13:30:00</td><td id="5264_comment" class="comment"></td></tr><tr id="5284_tr"><td id="5284_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5284" title="5284經寶精密控股股份有限公司" class="linkTip">5284</a>   <a href="fibest.jsp?goback=1&amp;stock=5284" title="5284經寶精密控股股份有限公司">jpp-KY</a></td><td id="5284_z" style="color: rgb(0, 0, 0);">54.40</td><td><label id="5284_diff" style="color: rgb(0, 0, 0);">0.00</label> <label id="5284_pre" style="color: rgb(0, 0, 0);"> (0.00%)</label></td><td id="5284_tv">1</td><td id="5284_v">10</td><td id="5284_Reference_price">-</td><td id="5284_Reference_volume">-</td><td id="5284_b">54.40</td><td id="5284_g">2</td><td id="5284_a">54.90</td><td id="5284_f">1</td><td id="5284_o">55.10</td><td id="5284_h">55.20</td><td id="5284_l">54.40</td><td id="5284_t">13:30:00</td><td id="5284_comment" class="comment"></td></tr><tr id="5288_tr"><td id="5288_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5288" title="5288豐祥控股股份有限公司" class="linkTip">5288</a>   <a href="fibest.jsp?goback=1&amp;stock=5288" title="5288豐祥控股股份有限公司">豐祥-KY</a></td><td id="5288_z" style="color: rgb(16, 80, 16);">129.50</td><td><label id="5288_diff" style="color: rgb(16, 80, 16);">▼0.5</label> <label id="5288_pre" style="color: rgb(16, 80, 16);"> (-0.38%)</label></td><td id="5288_tv">8</td><td id="5288_v">95</td><td id="5288_Reference_price">-</td><td id="5288_Reference_volume">-</td><td id="5288_b">129.00</td><td id="5288_g">23</td><td id="5288_a">130.50</td><td id="5288_f">14</td><td id="5288_o">130.50</td><td id="5288_h">130.50</td><td id="5288_l">129.00</td><td id="5288_t">13:30:00</td><td id="5288_comment" class="comment"></td></tr><tr id="5538_tr"><td id="5538_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5538" title="5538開曼東明控股股份有限公司" class="linkTip">5538</a>   <a href="fibest.jsp?goback=1&amp;stock=5538" title="5538開曼東明控股股份有限公司">東明-KY</a></td><td id="5538_z" style="color: rgb(255, 0, 0);">32.05</td><td><label id="5538_diff" style="color: rgb(255, 0, 0);">▲0.05</label> <label id="5538_pre" style="color: rgb(255, 0, 0);"> (0.16%)</label></td><td id="5538_tv">1</td><td id="5538_v">1</td><td id="5538_Reference_price">-</td><td id="5538_Reference_volume">-</td><td id="5538_b">32.05</td><td id="5538_g">2</td><td id="5538_a">32.75</td><td id="5538_f">3</td><td id="5538_o">32.05</td><td id="5538_h">32.05</td><td id="5538_l">32.05</td><td id="5538_t">13:30:00</td><td id="5538_comment" class="comment"></td></tr><tr id="5871_tr"><td id="5871_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5871" title="5871中租控股股份有限公司" class="linkTip">5871</a>   <a href="fibest.jsp?goback=1&amp;stock=5871" title="5871中租控股股份有限公司">中租-KY</a></td><td id="5871_z" style="color: rgb(255, 0, 0);">127.00</td><td><label id="5871_diff" style="color: rgb(255, 0, 0);">▲2.50</label> <label id="5871_pre" style="color: rgb(255, 0, 0);"> (2.01%)</label></td><td id="5871_tv">178</td><td id="5871_v">5307</td><td id="5871_Reference_price">-</td><td id="5871_Reference_volume">-</td><td id="5871_b">126.50</td><td id="5871_g">241</td><td id="5871_a">127.00</td><td id="5871_f">155</td><td id="5871_o">124.50</td><td id="5871_h">128.00</td><td id="5871_l">124.00</td><td id="5871_t">13:30:00</td><td id="5871_comment" class="comment"></td></tr><tr id="5906_tr"><td id="5906_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5906" title="5906台南企業(開曼)股份有限公司" class="linkTip">5906</a>   <a href="fibest.jsp?goback=1&amp;stock=5906" title="5906台南企業(開曼)股份有限公司">台南-KY</a></td><td id="5906_z" style="color: rgb(16, 80, 16);">13.05</td><td><label id="5906_diff" style="color: rgb(16, 80, 16);">▼0.1</label> <label id="5906_pre" style="color: rgb(16, 80, 16);"> (-0.76%)</label></td><td id="5906_tv">1</td><td id="5906_v">39</td><td id="5906_Reference_price">-</td><td id="5906_Reference_volume">-</td><td id="5906_b">12.85</td><td id="5906_g">5</td><td id="5906_a">13.05</td><td id="5906_f">1</td><td id="5906_o">13.00</td><td id="5906_h">13.05</td><td id="5906_l">12.80</td><td id="5906_t">13:30:00</td><td id="5906_comment" class="comment"></td></tr><tr id="5907_tr"><td id="5907_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=5907" title="5907GRAND OCEAN RETAIL GROUP LIMITED" class="linkTip">5907</a>   <a href="fibest.jsp?goback=1&amp;stock=5907" title="5907GRAND OCEAN RETAIL GROUP LIMITED">大洋-KY</a></td><td id="5907_z" style="color: rgb(255, 0, 0);">31.30</td><td><label id="5907_diff" style="color: rgb(255, 0, 0);">▲0.50</label> <label id="5907_pre" style="color: rgb(255, 0, 0);"> (1.62%)</label></td><td id="5907_tv">49</td><td id="5907_v">388</td><td id="5907_Reference_price">-</td><td id="5907_Reference_volume">-</td><td id="5907_b">31.30</td><td id="5907_g">7</td><td id="5907_a">31.35</td><td id="5907_f">23</td><td id="5907_o">31.00</td><td id="5907_h">31.40</td><td id="5907_l">31.00</td><td id="5907_t">13:30:00</td><td id="5907_comment" class="comment"></td></tr><tr id="6415_tr"><td id="6415_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6415" title="6415矽力杰股份有限公司" class="linkTip">6415</a>   <a href="fibest.jsp?goback=1&amp;stock=6415" title="6415矽力杰股份有限公司">矽力-KY</a></td><td id="6415_z" style="color: rgb(255, 0, 0);">705.00</td><td><label id="6415_diff" style="color: rgb(255, 0, 0);">▲7.00</label> <label id="6415_pre" style="color: rgb(255, 0, 0);"> (1.00%)</label></td><td id="6415_tv">57</td><td id="6415_v">712</td><td id="6415_Reference_price">-</td><td id="6415_Reference_volume">-</td><td id="6415_b">705.00</td><td id="6415_g">21</td><td id="6415_a">706.00</td><td id="6415_f">7</td><td id="6415_o">699.00</td><td id="6415_h">716.00</td><td id="6415_l">681.00</td><td id="6415_t">13:30:00</td><td id="6415_comment" class="comment"></td></tr><tr id="6431_tr"><td id="6431_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6431" title="6431光麗光電科技股份有限公司" class="linkTip">6431</a>   <a href="fibest.jsp?goback=1&amp;stock=6431" title="6431光麗光電科技股份有限公司">光麗-KY</a></td><td id="6431_z" style="color: rgb(16, 80, 16);">24.30</td><td><label id="6431_diff" style="color: rgb(16, 80, 16);">▼0.6</label> <label id="6431_pre" style="color: rgb(16, 80, 16);"> (-2.41%)</label></td><td id="6431_tv">12</td><td id="6431_v">93</td><td id="6431_Reference_price">-</td><td id="6431_Reference_volume">-</td><td id="6431_b">24.30</td><td id="6431_g">13</td><td id="6431_a">24.50</td><td id="6431_f">4</td><td id="6431_o">24.90</td><td id="6431_h">25.00</td><td id="6431_l">24.30</td><td id="6431_t">13:30:00</td><td id="6431_comment" class="comment"></td></tr><tr id="6451_tr"><td id="6451_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6451" title="6451訊芯科技控股股份有限公司" class="linkTip">6451</a>   <a href="fibest.jsp?goback=1&amp;stock=6451" title="6451訊芯科技控股股份有限公司">訊芯-KY</a></td><td id="6451_z" style="color: rgb(255, 0, 0);">117.50</td><td><label id="6451_diff" style="color: rgb(255, 0, 0);">▲5.00</label> <label id="6451_pre" style="color: rgb(255, 0, 0);"> (4.44%)</label></td><td id="6451_tv">159</td><td id="6451_v">5080</td><td id="6451_Reference_price">-</td><td id="6451_Reference_volume">-</td><td id="6451_b">117.50</td><td id="6451_g">38</td><td id="6451_a">118.00</td><td id="6451_f">35</td><td id="6451_o">113.00</td><td id="6451_h">119.50</td><td id="6451_l">112.50</td><td id="6451_t">13:30:00</td><td id="6451_comment" class="comment"></td></tr><tr id="6452_tr"><td id="6452_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6452" title="6452康友製藥控股有限公司" class="linkTip">6452</a>   <a href="fibest.jsp?goback=1&amp;stock=6452" title="6452康友製藥控股有限公司">康友-KY</a></td><td id="6452_z" style="color: rgb(16, 80, 16);">224.00</td><td><label id="6452_diff" style="color: rgb(16, 80, 16);">▼3.5</label> <label id="6452_pre" style="color: rgb(16, 80, 16);"> (-1.54%)</label></td><td id="6452_tv">46</td><td id="6452_v">610</td><td id="6452_Reference_price">-</td><td id="6452_Reference_volume">-</td><td id="6452_b">224.00</td><td id="6452_g">11</td><td id="6452_a">224.50</td><td id="6452_f">1</td><td id="6452_o">228.00</td><td id="6452_h">228.00</td><td id="6452_l">224.00</td><td id="6452_t">13:30:00</td><td id="6452_comment" class="comment"></td></tr><tr id="6456_tr"><td id="6456_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6456" title="6456General Interface Solution (GIS) Holding Limited" class="linkTip">6456</a>   <a href="fibest.jsp?goback=1&amp;stock=6456" title="6456General Interface Solution (GIS) Holding Limited">GIS-KY</a></td><td id="6456_z" style="color: rgb(255, 0, 0);">105.50</td><td><label id="6456_diff" style="color: rgb(255, 0, 0);">▲2.50</label> <label id="6456_pre" style="color: rgb(255, 0, 0);"> (2.43%)</label></td><td id="6456_tv">258</td><td id="6456_v">3139</td><td id="6456_Reference_price">-</td><td id="6456_Reference_volume">-</td><td id="6456_b">105.00</td><td id="6456_g">39</td><td id="6456_a">105.50</td><td id="6456_f">221</td><td id="6456_o">103.50</td><td id="6456_h">105.50</td><td id="6456_l">103.00</td><td id="6456_t">13:30:00</td><td id="6456_comment" class="comment"></td></tr><tr id="6525_tr"><td id="6525_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6525" title="6525捷敏股份有限公司" class="linkTip">6525</a>   <a href="fibest.jsp?goback=1&amp;stock=6525" title="6525捷敏股份有限公司">捷敏-KY</a></td><td id="6525_z" style="color: rgb(255, 0, 0);">65.40</td><td><label id="6525_diff" style="color: rgb(255, 0, 0);">▲0.40</label> <label id="6525_pre" style="color: rgb(255, 0, 0);"> (0.62%)</label></td><td id="6525_tv">3</td><td id="6525_v">126</td><td id="6525_Reference_price">-</td><td id="6525_Reference_volume">-</td><td id="6525_b">65.20</td><td id="6525_g">3</td><td id="6525_a">65.50</td><td id="6525_f">5</td><td id="6525_o">65.70</td><td id="6525_h">65.70</td><td id="6525_l">64.80</td><td id="6525_t">13:30:00</td><td id="6525_comment" class="comment"></td></tr><tr id="6541_tr"><td id="6541_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6541" title="6541泰福生技股份有限公司" class="linkTip">6541</a>   <a href="fibest.jsp?goback=1&amp;stock=6541" title="6541泰福生技股份有限公司">泰福-KY</a></td><td id="6541_z" style="color: rgb(16, 80, 16);">68.90</td><td><label id="6541_diff" style="color: rgb(16, 80, 16);">▼0.4</label> <label id="6541_pre" style="color: rgb(16, 80, 16);"> (-0.58%)</label></td><td id="6541_tv">2</td><td id="6541_v">112</td><td id="6541_Reference_price">-</td><td id="6541_Reference_volume">-</td><td id="6541_b">68.90</td><td id="6541_g">2</td><td id="6541_a">69.60</td><td id="6541_f">3</td><td id="6541_o">69.90</td><td id="6541_h">70.60</td><td id="6541_l">68.90</td><td id="6541_t">13:30:00</td><td id="6541_comment" class="comment"></td></tr><tr id="6573_tr"><td id="6573_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6573" title="6573虹揚發展科技股份有限公司" class="linkTip">6573</a>   <a href="fibest.jsp?goback=1&amp;stock=6573" title="6573虹揚發展科技股份有限公司">虹揚-KY</a></td><td id="6573_z" style="color: rgb(255, 0, 0);">23.30</td><td><label id="6573_diff" style="color: rgb(255, 0, 0);">▲0.30</label> <label id="6573_pre" style="color: rgb(255, 0, 0);"> (1.30%)</label></td><td id="6573_tv">1</td><td id="6573_v">18</td><td id="6573_Reference_price">-</td><td id="6573_Reference_volume">-</td><td id="6573_b">23.30</td><td id="6573_g">2</td><td id="6573_a">23.45</td><td id="6573_f">1</td><td id="6573_o">23.00</td><td id="6573_h">23.60</td><td id="6573_l">22.90</td><td id="6573_t">13:30:00</td><td id="6573_comment" class="comment"></td></tr><tr id="6591_tr"><td id="6591_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6591" title="6591動力科技股份有限公司" class="linkTip">6591</a>   <a href="fibest.jsp?goback=1&amp;stock=6591" title="6591動力科技股份有限公司">動力-KY</a></td><td id="6591_z" style="color: rgb(255, 0, 0);">42.10</td><td><label id="6591_diff" style="color: rgb(255, 0, 0);">▲0.35</label> <label id="6591_pre" style="color: rgb(255, 0, 0);"> (0.84%)</label></td><td id="6591_tv">7</td><td id="6591_v">133</td><td id="6591_Reference_price">-</td><td id="6591_Reference_volume">-</td><td id="6591_b">42.05</td><td id="6591_g">1</td><td id="6591_a">42.10</td><td id="6591_f">1</td><td id="6591_o">41.60</td><td id="6591_h">42.10</td><td id="6591_l">41.60</td><td id="6591_t">13:30:00</td><td id="6591_comment" class="comment"></td></tr><tr id="6641_tr"><td id="6641_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6641" title="6641基士德科技股份有限公司" class="linkTip">6641</a>   <a href="fibest.jsp?goback=1&amp;stock=6641" title="6641基士德科技股份有限公司">基士德-KY</a></td><td id="6641_z" style="color: rgb(16, 80, 16);">72.80</td><td><label id="6641_diff" style="color: rgb(16, 80, 16);">▼0.2</label> <label id="6641_pre" style="color: rgb(16, 80, 16);"> (-0.27%)</label></td><td id="6641_tv">1</td><td id="6641_v">20</td><td id="6641_Reference_price">-</td><td id="6641_Reference_volume">-</td><td id="6641_b">72.80</td><td id="6641_g">1</td><td id="6641_a">73.40</td><td id="6641_f">2</td><td id="6641_o">73.00</td><td id="6641_h">73.30</td><td id="6641_l">72.80</td><td id="6641_t">13:30:00</td><td id="6641_comment" class="comment"></td></tr><tr id="6666_tr"><td id="6666_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6666" title="6666羅麗芬控股股份有限公司" class="linkTip">6666</a>   <a href="fibest.jsp?goback=1&amp;stock=6666" title="6666羅麗芬控股股份有限公司">羅麗芬-KY</a></td><td id="6666_z" style="color: rgb(255, 0, 0);">184.00</td><td><label id="6666_diff" style="color: rgb(255, 0, 0);">▲7.50</label> <label id="6666_pre" style="color: rgb(255, 0, 0);"> (4.25%)</label></td><td id="6666_tv">18</td><td id="6666_v">419</td><td id="6666_Reference_price">-</td><td id="6666_Reference_volume">-</td><td id="6666_b">184.00</td><td id="6666_g">4</td><td id="6666_a">184.50</td><td id="6666_f">9</td><td id="6666_o">176.50</td><td id="6666_h">185.50</td><td id="6666_l">176.00</td><td id="6666_t">13:30:00</td><td id="6666_comment" class="comment"></td></tr><tr id="6671_tr"><td id="6671_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6671" title="6671三能集團控股股份有限公司" class="linkTip">6671</a>   <a href="fibest.jsp?goback=1&amp;stock=6671" title="6671三能集團控股股份有限公司">三能-KY</a></td><td id="6671_z" style="color: rgb(0, 0, 0);">41.00</td><td><label id="6671_diff" style="color: rgb(0, 0, 0);">0.00</label> <label id="6671_pre" style="color: rgb(0, 0, 0);"> (0.00%)</label></td><td id="6671_tv">1</td><td id="6671_v">10</td><td id="6671_Reference_price">-</td><td id="6671_Reference_volume">-</td><td id="6671_b">40.60</td><td id="6671_g">2</td><td id="6671_a">41.00</td><td id="6671_f">7</td><td id="6671_o">40.60</td><td id="6671_h">41.00</td><td id="6671_l">40.60</td><td id="6671_t">13:30:00</td><td id="6671_comment" class="comment"></td></tr><tr id="6672_tr"><td id="6672_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=6672" title="6672騰輝電子國際集團股份有限公司" class="linkTip">6672</a>   <a href="fibest.jsp?goback=1&amp;stock=6672" title="6672騰輝電子國際集團股份有限公司">騰輝電子-KY</a></td><td id="6672_z" style="color: rgb(255, 0, 0);">97.90</td><td><label id="6672_diff" style="color: rgb(255, 0, 0);">▲2.70</label> <label id="6672_pre" style="color: rgb(255, 0, 0);"> (2.84%)</label></td><td id="6672_tv">26</td><td id="6672_v">916</td><td id="6672_Reference_price">-</td><td id="6672_Reference_volume">-</td><td id="6672_b">97.80</td><td id="6672_g">1</td><td id="6672_a">98.00</td><td id="6672_f">48</td><td id="6672_o">95.90</td><td id="6672_h">98.70</td><td id="6672_l">95.80</td><td id="6672_t">13:30:00</td><td id="6672_comment" class="comment"></td></tr><tr id="8404_tr"><td id="8404_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8404" title="8404百和興業股份有限公司" class="linkTip">8404</a>   <a href="fibest.jsp?goback=1&amp;stock=8404" title="8404百和興業股份有限公司">百和興業-KY</a></td><td id="8404_z" style="color: rgb(16, 80, 16);">42.65</td><td><label id="8404_diff" style="color: rgb(16, 80, 16);">▼0.1</label> <label id="8404_pre" style="color: rgb(16, 80, 16);"> (-0.23%)</label></td><td id="8404_tv">33</td><td id="8404_v">119</td><td id="8404_Reference_price">-</td><td id="8404_Reference_volume">-</td><td id="8404_b">42.40</td><td id="8404_g">9</td><td id="8404_a">42.65</td><td id="8404_f">2</td><td id="8404_o">42.75</td><td id="8404_h">42.75</td><td id="8404_l">42.40</td><td id="8404_t">13:30:00</td><td id="8404_comment" class="comment"></td></tr><tr id="8411_tr"><td id="8411_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8411" title="8411福貞控股股份有限公司" class="linkTip">8411</a>   <a href="fibest.jsp?goback=1&amp;stock=8411" title="8411福貞控股股份有限公司">福貞-KY</a></td><td id="8411_z" style="color: rgb(255, 0, 0);">16.05</td><td><label id="8411_diff" style="color: rgb(255, 0, 0);">▲0.05</label> <label id="8411_pre" style="color: rgb(255, 0, 0);"> (0.31%)</label></td><td id="8411_tv">5</td><td id="8411_v">26</td><td id="8411_Reference_price">-</td><td id="8411_Reference_volume">-</td><td id="8411_b">15.95</td><td id="8411_g">2</td><td id="8411_a">16.10</td><td id="8411_f">10</td><td id="8411_o">15.80</td><td id="8411_h">16.05</td><td id="8411_l">15.80</td><td id="8411_t">13:30:00</td><td id="8411_comment" class="comment"></td></tr><tr id="8427_tr"><td id="8427_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8427" title="8427基勝(開曼)控股股份有限公司" class="linkTip">8427</a>   <a href="fibest.jsp?goback=1&amp;stock=8427" title="8427基勝(開曼)控股股份有限公司">基勝-KY</a></td><td id="8427_z">40.00</td><td><label id="8427_diff">-</label> <label id="8427_pre">-</label></td><td id="8427_tv">-</td><td id="8427_v">-</td><td id="8427_Reference_price">-</td><td id="8427_Reference_volume">-</td><td id="8427_b">38.40</td><td id="8427_g">1</td><td id="8427_a">40.00</td><td id="8427_f">1</td><td id="8427_o">-</td><td id="8427_h">-</td><td id="8427_l">-</td><td id="8427_t">13:30:00</td><td id="8427_comment" class="comment"></td></tr><tr id="8429_tr"><td id="8429_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8429" title="8429金麗集團控股有限公司" class="linkTip">8429</a>   <a href="fibest.jsp?goback=1&amp;stock=8429" title="8429金麗集團控股有限公司">金麗-KY</a></td><td id="8429_z" style="color: rgb(16, 80, 16);">13.50</td><td><label id="8429_diff" style="color: rgb(16, 80, 16);">▼0.05</label> <label id="8429_pre" style="color: rgb(16, 80, 16);"> (-0.37%)</label></td><td id="8429_tv">7</td><td id="8429_v">217</td><td id="8429_Reference_price">-</td><td id="8429_Reference_volume">-</td><td id="8429_b">13.50</td><td id="8429_g">28</td><td id="8429_a">13.55</td><td id="8429_f">17</td><td id="8429_o">13.50</td><td id="8429_h">13.60</td><td id="8429_l">13.45</td><td id="8429_t">13:30:00</td><td id="8429_comment" class="comment"></td></tr><tr id="8442_tr"><td id="8442_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8442" title="8442威宏控股股份有限公司" class="linkTip">8442</a>   <a href="fibest.jsp?goback=1&amp;stock=8442" title="8442威宏控股股份有限公司">威宏-KY</a></td><td id="8442_z" style="color: rgb(16, 80, 16);">57.00</td><td><label id="8442_diff" style="color: rgb(16, 80, 16);">▼0.5</label> <label id="8442_pre" style="color: rgb(16, 80, 16);"> (-0.87%)</label></td><td id="8442_tv">1</td><td id="8442_v">3</td><td id="8442_Reference_price">-</td><td id="8442_Reference_volume">-</td><td id="8442_b">56.90</td><td id="8442_g">1</td><td id="8442_a">57.00</td><td id="8442_f">1</td><td id="8442_o">57.50</td><td id="8442_h">57.50</td><td id="8442_l">57.00</td><td id="8442_t">13:30:00</td><td id="8442_comment" class="comment"></td></tr><tr id="8466_tr"><td id="8466_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8466" title="8466M.J. International Co. Ltd." class="linkTip">8466</a>   <a href="fibest.jsp?goback=1&amp;stock=8466" title="8466M.J. International Co. Ltd.">美吉吉-KY</a></td><td id="8466_z" style="color: rgb(255, 0, 0);">83.70</td><td><label id="8466_diff" style="color: rgb(255, 0, 0);">▲0.30</label> <label id="8466_pre" style="color: rgb(255, 0, 0);"> (0.36%)</label></td><td id="8466_tv">1</td><td id="8466_v">62</td><td id="8466_Reference_price">-</td><td id="8466_Reference_volume">-</td><td id="8466_b">83.30</td><td id="8466_g">1</td><td id="8466_a">83.70</td><td id="8466_f">9</td><td id="8466_o">83.40</td><td id="8466_h">83.70</td><td id="8466_l">83.40</td><td id="8466_t">13:30:00</td><td id="8466_comment" class="comment"></td></tr><tr id="8467_tr"><td id="8467_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8467" title="8467波力環球企業股份有限公司" class="linkTip">8467</a>   <a href="fibest.jsp?goback=1&amp;stock=8467" title="8467波力環球企業股份有限公司">波力-KY</a></td><td id="8467_z" style="color: rgb(255, 255, 255); background-color: rgb(255, 0, 0);">58.90</td><td><label id="8467_diff" style="color: rgb(255, 0, 0);">▲5.30</label> <label id="8467_pre" style="color: rgb(255, 0, 0);"> (9.89%)</label></td><td id="8467_tv">15</td><td id="8467_v">449</td><td id="8467_Reference_price">-</td><td id="8467_Reference_volume">-</td><td id="8467_b">58.90</td><td id="8467_g">218</td><td id="8467_a">-</td><td id="8467_f">-</td><td id="8467_o">57.90</td><td id="8467_h">58.90</td><td id="8467_l">55.60</td><td id="8467_t">13:30:00</td><td id="8467_comment" class="comment"></td></tr><tr id="8480_tr"><td id="8480_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8480" title="8480泰昇國際(控股)有限公司" class="linkTip">8480</a>   <a href="fibest.jsp?goback=1&amp;stock=8480" title="8480泰昇國際(控股)有限公司">泰昇-KY</a></td><td id="8480_z" style="color: rgb(255, 0, 0);">127.50</td><td><label id="8480_diff" style="color: rgb(255, 0, 0);">▲2.00</label> <label id="8480_pre" style="color: rgb(255, 0, 0);"> (1.59%)</label></td><td id="8480_tv">2</td><td id="8480_v">177</td><td id="8480_Reference_price">-</td><td id="8480_Reference_volume">-</td><td id="8480_b">127.50</td><td id="8480_g">2</td><td id="8480_a">128.00</td><td id="8480_f">3</td><td id="8480_o">126.50</td><td id="8480_h">128.50</td><td id="8480_l">123.50</td><td id="8480_t">13:30:00</td><td id="8480_comment" class="comment"></td></tr><tr id="8482_tr"><td id="8482_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8482" title="8482商億全球控股有限公司" class="linkTip">8482</a>   <a href="fibest.jsp?goback=1&amp;stock=8482" title="8482商億全球控股有限公司">商億-KY</a></td><td id="8482_z" style="color: rgb(255, 0, 0);">129.00</td><td><label id="8482_diff" style="color: rgb(255, 0, 0);">▲0.50</label> <label id="8482_pre" style="color: rgb(255, 0, 0);"> (0.39%)</label></td><td id="8482_tv">1</td><td id="8482_v">131</td><td id="8482_Reference_price">-</td><td id="8482_Reference_volume">-</td><td id="8482_b">128.50</td><td id="8482_g">2</td><td id="8482_a">129.00</td><td id="8482_f">3</td><td id="8482_o">129.00</td><td id="8482_h">129.00</td><td id="8482_l">128.00</td><td id="8482_t">13:30:00</td><td id="8482_comment" class="comment"></td></tr><tr id="8488_tr"><td id="8488_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8488" title="8488吉源控股股份有限公司" class="linkTip">8488</a>   <a href="fibest.jsp?goback=1&amp;stock=8488" title="8488吉源控股股份有限公司">吉源-KY</a></td><td id="8488_z" style="color: rgb(255, 0, 0);">17.40</td><td><label id="8488_diff" style="color: rgb(255, 0, 0);">▲0.05</label> <label id="8488_pre" style="color: rgb(255, 0, 0);"> (0.29%)</label></td><td id="8488_tv">1</td><td id="8488_v">26</td><td id="8488_Reference_price">-</td><td id="8488_Reference_volume">-</td><td id="8488_b">17.30</td><td id="8488_g">2</td><td id="8488_a">17.40</td><td id="8488_f">9</td><td id="8488_o">17.35</td><td id="8488_h">17.40</td><td id="8488_l">17.05</td><td id="8488_t">13:30:00</td><td id="8488_comment" class="comment"></td></tr><tr id="8499_tr"><td id="8499_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=8499" title="8499鼎炫投資控股股份有限公司" class="linkTip">8499</a>   <a href="fibest.jsp?goback=1&amp;stock=8499" title="8499鼎炫投資控股股份有限公司">鼎炫-KY</a></td><td id="8499_z" style="color: rgb(255, 0, 0);">131.50</td><td><label id="8499_diff" style="color: rgb(255, 0, 0);">▲5.00</label> <label id="8499_pre" style="color: rgb(255, 0, 0);"> (3.95%)</label></td><td id="8499_tv">41</td><td id="8499_v">464</td><td id="8499_Reference_price">-</td><td id="8499_Reference_volume">-</td><td id="8499_b">131.50</td><td id="8499_g">243</td><td id="8499_a">132.00</td><td id="8499_f">33</td><td id="8499_o">128.00</td><td id="8499_h">131.50</td><td id="8499_l">127.00</td><td id="8499_t">13:30:00</td><td id="8499_comment" class="comment"></td></tr><tr id="9802_tr"><td id="9802_n" style="text-align:left;"><a href="fibest.jsp?goback=1&amp;stock=9802" title="9802鈺齊國際股份有限公司" class="linkTip">9802</a>   <a href="fibest.jsp?goback=1&amp;stock=9802" title="9802鈺齊國際股份有限公司">鈺齊-KY</a></td><td id="9802_z" style="color: rgb(255, 0, 0);">87.40</td><td><label id="9802_diff" style="color: rgb(255, 0, 0);">▲2.00</label> <label id="9802_pre" style="color: rgb(255, 0, 0);"> (2.34%)</label></td><td id="9802_tv">75</td><td id="9802_v">536</td><td id="9802_Reference_price">-</td><td id="9802_Reference_volume">-</td><td id="9802_b">87.20</td><td id="9802_g">12</td><td id="9802_a">87.40</td><td id="9802_f">6</td><td id="9802_o">85.40</td><td id="9802_h">87.40</td><td id="9802_l">84.50</td><td id="9802_t">13:30:00</td><td id="9802_comment" class="comment"></td></tr></tbody>
+	</table>
+
+
+	
+
+
+
+    
+
+    
+
+
+</div>
+<div id="Pagination" class="pagination"><span class="current prev">第一頁</span><span class="current prev">上一頁</span><span class="current">1</span><span class="current next">下一頁</span><span class="current next">最末頁</span></div>
+<div style="float:right" id="Pagination1">
+	每頁顯示筆數：
+	<select id="prePage">
+		<option value="0">10</option>
+		<option value="1">20</option>
+		<option value="2">50</option>
+		<option value="3">100</option>
+	</select> |
+	資料筆數:<label id="totlaRecords">74</label>
+</div>
+
+	
+		<br>
+		<br>
+		<div class="ui-widget-content group-footer" style="background:#d3d3d3;align:center;padding:10px">
+            1. 成交值、成交量不含零股、鉅額、盤後定價、拍賣及標購。<br>2. 除境外指數股票型基金及外國股票第二上市 (櫃) 外，餘交易單位皆為千股。<br>3. 外國第一上市 (櫃) 公司證券簡稱前二碼為「F-」者，表示其股票每股面額為新臺幣 10 元；「F*」者表示無面額或每股面額非屬新臺幣 10 元。<br>4. 開盤(08:30至09:00及暫緩開盤期間)及收盤(13:25至13:30及暫緩收盤期間)期間，揭露試算資訊，供投資人參考。<br>5. ETF證券代號第六碼為K、M、S、C者，表示該ETF以外幣（含人民幣）交易。<br>6. <span style="background-color:#aaa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 顏色區塊表示該檔股票目前為「暫停交易」。<br>7. <span style="background-color:#f93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 顏色區塊表示該檔股票目前為「恢復交易」。<br>8. <span style="background-color:#e7c1ff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 顏色區塊表示該檔股票目前為「暫緩開盤或暫緩收盤」。<br>
+
+
+			
+		</div>
+	
+	
+
+
+
+
+</div>
+
+
+
+<script>
+	var type="all";
+	$( "#tdrDialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 300
+      },
+      hide: {
+        effect: "explode",
+        duration: 300
+      }
+    });
+	loadPageChangeFunction();
+
+
+
+
+    //ä¸åå¸å ´çç«é¢
+	ex="tse";
+	ind="01";
+	currPage="0";
+	loadGroupList();
+
+/*
+$(function() {
+    $( "linkTip" ).tooltip();
+  });*/
+</script>
+<!--[if lte IE 9]>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
+<![endif]-->
+
+<script>
+	$(document).ready(function() 
+	{ 
+            $('#search').autocomplete({
+                position: { at: 'left top' ,of :'#search_bar' }
+            });
+
+		if ($.browser.msie) 
+		{
+    	add_placeholder('search', '請輸入股票代號或名稱：');
+   	}
+  });	
+</script>
+
+
+<div id="news">
+			<form class="form-wrapper" action="fibest.jsp">
+				<h3>個股行情查詢</h3>
+                <input type="text" id="search" name="stock" placeholder="請輸入股票代號或名稱：" required="" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                <input type="submit" value="查詢" id="submit" class="qSearch">
+                
+                <span id="search_bar" style="position: relative;left:-158px;top:18px">&nbsp;</span>
+			</form>
+			
+			<div class="form-wrapper">				
+				<table width="100%">
+					<thead>
+    					<tr><td width="40%"><h3><a href="frmsa.jsp">寶島指數</a> </h3></td>
+    					<td width="30%" id="side_FRMSA_z" align="right" style="color: rgb(255, 0, 0);">12191.88</td>
+    					<td width="30%" id="side_FRMSA_t" align="right">13:30:00</td>
+					</tr></thead>
+					<tbody><tr>
+						<td nowrap="" align="left">漲跌價差<br>(百分比)</td>
+						<td nowrap="" align="right">最高</td>
+						<td nowrap="" align="right">最低</td>
+					</tr>
+					<tr>
+						<td nowrap="" align="left">
+							<label id="side_FRMSA_diff" style="color: rgb(255, 0, 0);">▲26.91</label>
+							<label id="side_FRMSA_pre" style="color: rgb(255, 0, 0);">(0.22%)</label>	
+						</td>
+						<td nowrap="" id="side_FRMSA_h" align="right" style="color: rgb(255, 0, 0);">12191.88</td>
+						<td nowrap="" id="side_FRMSA_l" align="right" style="color: rgb(16, 80, 16);">12137.63</td>
+					</tr>
+				</tbody></table>
+			</div>
+
+
+			<div class="form-wrapper">				
+				<table width="100%">
+					<tbody><tr>
+						<td width="40%"><h3><a href="index.jsp">加權指數</a> </h3></td>
+						<td width="30%" id="side_t00_z" align="right" style="color: rgb(255, 0, 0);">10634.85</td>
+						<td width="30%" id="side_t00_t" align="right">13:30:00</td>
+					</tr>
+					<tr>
+					</tr>
+						<tr><td nowrap="" align="left">漲跌價差<br>(百分比)</td>
+						<td nowrap="" align="right">最高</td>
+						<td nowrap="" align="right">最低</td>
+    				</tr>
+					<tr>
+						<td nowrap="" align="left">
+							<label id="side_t00_diff" style="color: rgb(255, 0, 0);">▲16.80</label>	
+							<label id="side_t00_pre" style="color: rgb(255, 0, 0);">(0.16%)</label>	
+						</td>
+						<td nowrap="" id="side_t00_h" align="right" style="color: rgb(255, 0, 0);">10634.85</td>
+						<td nowrap="" id="side_t00_l" align="right" style="color: rgb(16, 80, 16);">10589.42</td>
+				    </tr>
+				</tbody></table>
+			</div>
+			
+			<div class="form-wrapper">				
+				<table width="100%">
+					<tbody><tr>
+						<td width="40%"><h3><a href="index.jsp">櫃買指數</a> </h3></td>
+						<td width="30%" id="side_o00_z" align="right" style="color: rgb(255, 0, 0);">139.70</td>
+						<td width="30%" id="side_o00_t" align="right">13:33:00</td>
+					</tr>
+					<tr>
+						<td nowrap="" align="left">漲跌價差<br>(百分比)</td>
+						<td nowrap="" align="right">最高</td>
+						<td nowrap="" align="right">最低</td>
+					</tr>
+					<tr>
+						<td nowrap="" align="left">
+							<label id="side_o00_diff" style="color: rgb(255, 0, 0);">▲1.18</label>
+							<label id="side_o00_pre" style="color: rgb(255, 0, 0);">(0.85%)</label>	
+						</td>
+						<td nowrap="" id="side_o00_h" align="right" style="color: rgb(255, 0, 0);">139.70</td>
+						<td nowrap="" id="side_o00_l" align="right" style="color: rgb(255, 0, 0);">138.56</td>
+					</tr>
+				</tbody></table>
+			</div>
+			
+
+
+			<div class="form-wrapper">
+				<table width="100%">
+					<tbody><tr>
+						<td width="40%" id="side_TX_n"><h3><b><a href="futures.jsp">臺指期099</a></b></h3></td>
+						<td width="30%" id="side_TX_z" align="right" style="color: rgb(255, 0, 0);">10605.00</td>
+						<td width="30%" id="side_TX_t" align="right">13:45:00</td>
+					</tr>
+					<tr>
+						<td nowrap="" align="left">漲跌價差<br>(百分比)</td>
+						<td nowrap="" align="right">最高</td>
+						<td nowrap="" align="right">最低</td>
+					</tr>
+					<tr>
+						<td nowrap="" align="left">
+							<label id="side_TX_diff" style="color: rgb(255, 0, 0);">▲28.00</label>
+							<label id="side_TX_pre" style="color: rgb(255, 0, 0);">(0.26%)</label>	
+						</td>
+						<td nowrap="" id="side_TX_h" align="right" style="color: rgb(255, 0, 0);">10615.00</td>
+						<td nowrap="" id="side_TX_l" align="right" style="color: rgb(16, 80, 16);">10556.00</td>
+					</tr>
+				</tbody></table>
+			</div>
+
+
+<!--
+
+			<div class="form-wrapper">
+				<div>
+					<table width="100%">
+							<tr>
+							<td><h3><a href="frmsa.jsp">寶島指數</a> </h3></td>
+							<td id="side_FRMSA_t" align="right"></td>
+							</tr>
+					</table>
+				</div>
+
+
+				
+				<table width="100%" id="o00Table" class="o00Table">
+					<thead>
+						<td align="center" style="white-space:nowrap">寶島指數</td>
+						<td align="center">漲跌價差<BR>(百分比)</td>
+						<td align="center">最高</td>
+						<td align="center">最低</td>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="side_FRMSA_z" align="center">-</td>
+							<td align="center">
+								<label id="side_FRMSA_diff">-</label><br>
+								<label id="side_FRMSA_pre"></label>	
+							</td>
+							<td id="side_FRMSA_h" align="center">-</td>
+							<td id="side_FRMSA_l" align="center">-</td>
+						</td>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="form-wrapper">
+				<div>
+					<table width="100%">
+							<tr>
+							<td><h3><a href="index.jsp">集中市場大盤</a> </h3></td>
+							<td id="side_t00_t" align="right"></td>
+							</tr>
+					</table>
+				</div>
+				<table width="100%" id="t00Table" class="t00Table">
+					<thead>
+						<td align="center" style="white-space:nowrap">加權指數</td>
+						<td align="center">漲跌價差<BR>(百分比)</td>
+						<td align="center">最高</td>
+						<td align="center">最低</td>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="side_t00_z" align="center">-</td>
+							<td align="center">
+								<label id="side_t00_diff">-</label>	<br>
+								<label id="side_t00_pre"></label>	
+							</td>
+							<td id="side_t00_h" align="center">-</td>
+							<td id="side_t00_l" align="center">-</td>
+						</td>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="form-wrapper">
+				<div>
+					<table width="100%">
+							<tr>
+							<td><h3><a href="index.jsp">上櫃股票大盤</a> </h3></td>
+							<td id="side_o00_t" align="right"></td>
+							</tr>
+					</table>
+				</div>
+				
+				<table width="100%" id="o00Table" class="o00Table">
+					<thead>
+						<td align="center" style="white-space:nowrap">櫃買指數</td>
+						<td align="center">漲跌價差<BR>(百分比)</td>
+						<td align="center">最高</td>
+						<td align="center">最低</td>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="side_o00_z" align="center">-</td>
+							<td align="center">
+								<label id="side_o00_diff">-</label><br>
+								<label id="side_o00_pre"></label>	
+							</td>
+							<td id="side_o00_h" align="center">-</td>
+							<td id="side_o00_l" align="center">-</td>
+						</td>
+					</tbody>
+				</table>
+			</div>
+			
+
+
+			<div class="form-wrapper">
+				<div>
+					<table width="100%">
+							<tr>
+							<td id="side_TX_n"><h3><a href="futures.jsp">臺指期</a> </h3></td>
+							<td id="side_TX_t" align="right"></td>
+							</tr>
+					</table>
+				</div>
+				
+				<table width="100%" id="f00Table" class="f00Table">
+					<thead>
+						<td align="center" style="white-space:nowrap">臺指期</td>
+						<td align="center">漲跌價差<BR>(百分比)</td>
+						<td align="center">最高</td>
+						<td align="center">最低</td>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="side_TX_z" align="center">-</td>
+							<td align="center">
+								<label id="side_TX_diff">-</label><br>
+								<label id="side_TX_pre"></label>	
+							</td>
+							<td id="side_TX_h" align="center">-</td>
+							<td id="side_TX_l" align="center">-</td>
+						</td>
+					</tbody>
+				</table>
+			</div>
+
+
+-->
+
+			<div id="newsItem" title="å¬åäºé&nbsp;"> <!--class="newsItem"-->
+				<ul id="ticker_01" class="ticker"> 
+				
+					
+					
+					<li style="display: list-item; overflow: hidden; height: 0.523687px; padding-top: 0.0137813px; margin-top: 0px; padding-bottom: 0.0137813px; margin-bottom: 0px;">	
+					<b><font color="ff0000">重要公告提醒</font></b><br>為提供更為豐富、便捷及人性化之即時行情查詢服務，本公司於102年7月1日起推出「新版」基本市況報導網站平台，原「舊版」功能已於103年7月31日下午3時下線，不再提供服務。新版網址：<a href="https://mis.twse.com.tw">https://mis.twse.com.tw</a>，懇請您繼續支持與愛護。
+					</li><li style="display: list-item;">
+					<b>加強提醒投資人注意上市公司相關資訊</b><br>自九十五年四月十七日起，「ETF 行情」選項取消 ETF 成份股報價，只揭示 ETF 個股資訊。近期發現媒體以廣告形式刊登特定上市公司財務、業務相關資訊，為避免誤導投資人判斷，請投資人多加利用「公開資訊觀測站」，查詢由上市公司所發布之重大訊息，審慎評估謹慎投資。
+					</li></ul>
+			</div>
+			<div class="newsItem">
+				<h1>相關網站</h1>
+				<p><a href="https://www.twse.com.tw/" target="_blank">臺灣證券交易所</a><br>
+					<a href="https://mops.twse.com.tw/" target="_blank">公開資訊觀測站</a><br>
+					<a href="https://www.tpex.org.tw/" target="_blank">證券櫃檯買賣中心</a><br>
+					<a href="https://eshop.twse.com.tw/" target="_blank">網路資訊商店</a></p>
+			</div>
+	  </div>
+	</div>
+	
+	
+	
+	<script>
+	function tick(){
+		$('#ticker_01 li:first').slideUp( function () { $(this).appendTo($('#ticker_01')).slideDown(); });
+	}
+	setInterval(function(){ tick () }, 5000);
+	</script>
+
+<div id="footer">
+    <span>臺灣證券交易所已盡力為本網站提供正確可靠之資訊及最好之服務，若因任何資料之不正確或疏漏所衍生之損害或損失，本公司不負法律責任。<br>本網站資料不得作為商業使用，引用時，請註明資料來源，並請確保資料之完整性，不得任意增刪。<br>本站最佳瀏覽解析度為1024*768以上，建議使用Google Chrome、Safari、FireFox或Internet Explorer 9.0以上版本(請關閉相容性功能)瀏覽器。</span>
+    <br>
+
+    <ul>
+        <li><a id="disclaimerButton" style="color: green;">使用條款</a></li>
+        <li><a id="privacyButton" style="color: green;">隱私權保護說明</a></li>
+        <li><a href="https://suggestionbox.twse.com.tw/swsfront35/SWSF/SWSF01014.aspx" target="_blank" style="color: green;">聯絡我們</a></li>
+    </ul>
+
+    
+    
+    
+</div>
+
+
+</div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-tdrDialog" style="display: none; z-index: 1000; outline: 0px; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-tdrDialog">存託憑證專區公告事項</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="tdrDialog" class="ui-dialog-content ui-widget-content">
+  <p align="left">投資存託憑證請注意與原股掛牌交易價格之差異。<br><br>並請注意存託憑證流動性風險，原股發行人之財務業務風險，原股掛牌地之政治、經濟、社會變動、法令遵循等風險。</p>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-disclaimerDiv" style="display: none; z-index: 1000; outline: 0px; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-disclaimerDiv">臺灣證券交易所「基本市況報導網站」使用條款</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="disclaimerDiv" style="background-color: rgb(255, 255, 153);text-align:left;" class="ui-dialog-content ui-widget-content">
+        <font color="#930000">一、認知與接受條款</font><br>
+        <font color="#000000">臺灣證券交易所係依據本使用條款提供「基本市況報導網站」（https://mis.twse.com.tw/）服務（以下簡稱本網站）。當您使用本網站時，即表示您已閱讀、瞭解並同意接受本約定書之所有內容。臺灣證券交易所有權於任何時間修改或變更本約定書之內容，建議您隨時注意該等修改或變更。您於任何修改或變更後繼續使用「基本市況報導網站」，視為您已閱讀、瞭解並同意接受該等修改或變更。</font><br><br>
+        <font color="#930000">二、與第三人網站的連結</font><br>
+        <font color="#000000">本網站提供相關機構與資訊連結之服務，旨在便利您迅速獲得相關投資與研究資訊。您可能會因此連結至其他機構單位經營的網站，其他機構單位經營的網站均由各該機構單位自行負責，不屬臺灣證券交易所控制及負責範圍之內。</font><br><br>
+        <font color="#930000">三、隱私權政策</font><br>
+        <font color="#000000">關於您的個人資料以及其他特定資料依本網站「隱私權保護說明」受到保護與規範。</font><br><br>
+        <font color="#930000">四、系統中斷或故障</font><br>
+        <font color="#000000">本網站有時可能出現中斷或故障等現象，或許將造成您使用上的不便、資料喪失、錯誤或其他損失等情形。您於使用本網站時宜自行採取防護措施。臺灣證券交易所對於您因使用（或無法使用）本網站而造成的損害，不負任何賠償責任。</font><br><br>
+        <font color="#930000">五、下載軟體或資料</font><br>
+        <font color="#000000">臺灣證券交易所對於您使用本網站或經由本網站連結之其他網站而下載的軟體或資料，不負任何擔保責任。您應於下載前自行斟酌與判斷前述軟體或資料之合適性、有效性、正確性、完整性、及是否侵害他人權利，以免遭受損失（例如：造成您電腦系統受損、或儲存資料流失等）；臺灣證券交易所對於該等損失不負任何賠償責任。</font><br><br>
+        <font color="#930000">六、資訊或建議</font><br>
+        <font color="#000000">臺灣證券交易所對於您使用本網站或經由本網站連結之其他網站而取得之資訊或建議，不擔保其為完全正確無誤。臺灣證券交易所對於本網站所提供之資訊或建議有權隨時修改或刪除。您在做任何相關規劃與決定之前，仍應請教專業人員針對您的情況提意見，以符合您的個別需求。</font><br><br>
+        <font color="#930000">七、智慧財產權的保護</font><br>
+        <font color="#000000">本網站所使用之軟體或程式、網站上所有內容，包括但不限於著作、圖片、檔案、資訊、資料、網站架構、網站畫面的安排、網頁設計，均由臺灣證券交易所或其他權利人依法擁有其智慧財產權。任何人不得逕自使用、修改、重製、公開播送、改作、散布、發行、公開發表、進行還原工程、解編或反向組譯。若您欲引用或轉載前述軟體、程式或網站內容，必須依法先取得臺灣證券交易所或其他權利人之事前書面同意，並請註明資料來源同時確保資料之完整性，不得任意增刪。尊重智慧財產權是您應盡的義務。</font><br><br>
+        <font color="#930000">八、免責聲明</font><br>
+        <font color="#000000">本網站旨在為廣大投資人提供正確可靠之資訊及最好之服務，作為投資研究的參考依據，若因任何資料之不正確或疏漏所衍生之損害或損失，臺灣證券交易所將不負法律責任。是否經由本網站使用下載或取得任何資料，應由您自行考量且自負風險，因任何資料之下載而導致您電腦系統之任何損壞或資料流失，您應負完全責任。</font><br><br>
+    </div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-privacyDiv" style="display: none; z-index: 1000; outline: 0px; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-privacyDiv">隱私權保護說明</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="privacyDiv" style="background-color: rgb(255, 255, 153);text-align:left;" class="ui-dialog-content ui-widget-content">
+        <font color="#000000">以下的隱私權保護政策適用於您在臺灣證券交易所網站活動時，所涉及的個人資料蒐集、運用與保護，但不適用於經由臺灣證券交易所網站連結至之其他網站。當您由臺灣證券交易所連結至其他網站進行活動時，這些網站有其個別的隱私權保護政策，其資料處裡措施不適用臺灣證券交易所隱私權保護說明，本網站不負任何連帶責任。</font><br><br>
+        <font color="#000000">本公司網站並不會對於單純的瀏覽及檔案下載之行為，蒐集任何有關個人身份資料，而您瀏覽網站網頁或使用網站上查詢服務功能時，由伺服器會自行產生的相關日誌 (LOG) 紀錄，如上網設備的 IP 位址、連結網站時間、瀏覽器版本、瀏覽或使用的網頁資料等；其目的在於確認您的身分，以便於提供服務、或進行統計分析，進而提昇網站的使用效能，作為日後網站改進的參考。</font><br><br>
+        <font color="#000000">本公司所取得關於您的個人資料，除事先經您本人同意或依照相關法律規定，本公司不會將這些個人資料提供給任何第三人，或移作其他目的使用。由於科技發展的迅速，本公司將會視需要修改網站上所提供的隱私權保護說明，以落實並保障您隱私權益。當本公司完成相關規範之修訂時，會儘速將其刊登於臺灣證券交易所網站，以提醒您注意。如有任何意見或建議，歡迎聯絡我們，本公司將竭誠為您服務。</font><br><br>
+    </div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul></body></html>
